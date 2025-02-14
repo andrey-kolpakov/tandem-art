@@ -40,3 +40,13 @@ export interface Product {
     createdAt: Date;
     updatedAt: Date;
 }
+
+export interface Review {
+    id: number;
+    name: string;
+    description: string;
+    imageUrl: string;
+    linkTitle?: string; // Опциональное поле
+    linkUrl?: string;   // Опциональное поле
+}
+

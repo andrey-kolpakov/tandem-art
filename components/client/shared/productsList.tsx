@@ -21,7 +21,8 @@ export const ProductsList: React.FC<Props> = ({productsData}) => {
         <div className="product-list">
             {productsData.map((product, index) => {
                 return (
-                    <div key={index} style={{backgroundImage: `url(${product.imageUrl})`}} className="product-list__item" onClick={evt => openPopup(<ProductCard itemData={product}/>)}>
+                    <div key={index} style={{backgroundImage: `url(${product.imageUrl})`}}
+                         className="product-list__item" onClick={evt => openPopup(<ProductCard itemData={product}/>)}>
                         <h3>{product.title}</h3>
 
                     </div>

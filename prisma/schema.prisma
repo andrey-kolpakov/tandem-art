@@ -56,3 +56,13 @@ model Product {
   imageUrl    String
   altText     String
 }
+
+model review {
+  id          Int    @id @default(autoincrement())
+  name        String
+  description String
+  imageUrl    String
+
+  linkTitle String?
+  linkUrl   String?
+}

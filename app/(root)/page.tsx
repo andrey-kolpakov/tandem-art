@@ -1,13 +1,14 @@
 import "./page.scss";
 
-import {Container, AdvertSlider, ProductsList} from "@/components/client";
-import {SliderOfBanners, Product} from "@/types/types";
+import {Container, AdvertSlider, ProductsList, Reviews, FormBlock,} from "@/components/client";
+import {SliderOfBanners, Product, Review} from "@/types/types";
 
 import {dbClient} from "@/services/dbClient";
 
 export default async function Home() {
     const sliderData: SliderOfBanners = await dbClient.banners.getSliderByTitle('main-home') as SliderOfBanners
     const products: Product[] = await dbClient.products.getProductsAll() as Product[]
+    const reviews: Review[] = await dbClient.reviews.getReviewsAll() as Review[]
 
     // console.log(products)
 
@@ -23,8 +24,16 @@ export default async function Home() {
                     делаем качественно!</p>
             </Container>
 
-            <Container pd={true}  classNameOuter={'container--products-list'}>
+            <Container pd={true} classNameOuter={'container--products-list'}>
                 <ProductsList productsData={products}/>
+            </Container>
+
+            <Container>
+                <Reviews reviewsData={reviews}/>
+            </Container>
+
+            <Container>
+                <FormBlock/>
             </Container>
         </div>
     );

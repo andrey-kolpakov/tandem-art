@@ -6,5 +6,8 @@ export {Container} from './shared/container'
 export {AdvertSlider} from './shared/advertSlider'
 export {ProductsList} from './shared/productsList'
 export {ProductCard} from './shared/productCard'
+export {Reviews} from './shared/reviews'
+export {Form} from './shared/form'
+export {FormBlock} from './shared/formBlock'
 
 export {Button} from './ui/button'

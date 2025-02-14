@@ -2,13 +2,11 @@
 
 //advertSlider.tsx
 import React from 'react';
-import clsx from 'clsx';
 
 import {SliderImage} from '@/types/types'
-import Image from 'next/image'
 
 import {Swiper, SwiperSlide} from 'swiper/react'
-import {Autoplay, Navigation} from 'swiper/modules'
+import { Autoplay, Pagination, EffectFade } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/bundle'
 
@@ -27,17 +25,18 @@ export const AdvertSlider: React.FC<Props> = ({images}) => {
     return (
 
 
-        <Swiper className={styles.swiperAvdertSlider}>
+        <Swiper className={styles.swiperAvdertSlider}  effect={'fade'}
+                modules={[Autoplay, EffectFade]}>
 
             {images.map((image, index) => {
                 return (
                     <SwiperSlide key={index} style={{backgroundImage: `url(${image.imageUrl})`}}
                                  className={styles.swiperSlide}>
                         {/*<Container>*/}
-                            <h2>{image.headerText}</h2>
-                            <p>{image.subHeaderText}</p>
+                        <h2>{image.headerText}</h2>
+                        <p>{image.subHeaderText}</p>
 
-                            <Button href={image.buttonUrl}>{image.buttonText}</Button>
+                        <Button href={image.buttonUrl}>{image.buttonText}</Button>
                         {/*</Container>*/}
 
 
