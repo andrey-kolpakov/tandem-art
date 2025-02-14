@@ -1,0 +1,45 @@
+@use 'imports' as *;
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-outer {
+    background-position: center center;
+    background-size: cover;
+    margin: 4rem 0;
+    box-sizing: border-box;
+
+    &--full-screen {
+        min-height: 100vh;
+    }
+
+    &--centered-vertical {
+        display: flex;
+        align-items: center;
+    }
+
+    &--centered-horizontal {
+        display: flex;
+        justify-content: center;
+    }
+
+    &--stretch-content{
+        .container{
+            width: 100%;
+        }
+    }
+
+    &--pd{
+        padding: 6rem 0rem;
+    }
+
+    &--margin-top-0{
+        margin-top: 0;
+    }
+
+    &--margin-none{
+        margin: 0;
+    }
+}

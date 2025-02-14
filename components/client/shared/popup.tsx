@@ -2,7 +2,7 @@
 
 // import {useEffect} from 'react'
 import {usePopupStore} from '@/store/popupStore'
-import './styles/popup.scss'
+import '@/components/client/shared/styles/popup.scss'
 
 function Popup() {
     const {currentPopup, closePopup} = usePopupStore()

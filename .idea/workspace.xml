@@ -5,11 +5,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cd328da-717d-42ef-989b-7df31b355962" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/tandem-art.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tandem-art.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/assets/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/client/shared/advertSlider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/client/shared/container.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/client/shared/header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/client/shared/menu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/client/styles/container.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/client/styles/header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/client/styles/imports.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/client/styles/menu.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/client/ui/navlink.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/banners.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/dbClient.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/migrations/20250206154309_new/migration.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(root)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(root)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/client/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/client/header.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/client/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/client/menu.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/client/popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/popup.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/client/styles/popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/styles/popup.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/imports/typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/imports/typography.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/imports/vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/imports/vars.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/seed.ts" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/seed.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,29 +50,37 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/web/tandem-art&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/web/tandem-art/components/client/styles&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.prisma:push.executor&quot;: &quot;Run&quot;,
+    &quot;npm.prisma:seed.executor&quot;: &quot;Run&quot;,
+    &quot;npm.prisma:studio.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
     &quot;ts.external.directory.path&quot;: &quot;D:\\web\\tandem-art\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\web\tandem-art\components\client\styles" />
+      <recent name="D:\web\tandem-art\components\assets\images" />
       <recent name="D:\web\tandem-art" />
       <recent name="D:\web\tandem-art\components\imports" />
       <recent name="D:\web\tandem-art\store" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\web\tandem-art\components\client\shared" />
       <recent name="D:\web\tandem-art" />
       <recent name="D:\web\tandem-art\app\(root)" />
     </key>
@@ -74,6 +103,10 @@
       <workItem from="1739452492455" duration="385000" />
       <workItem from="1739455210996" duration="2615000" />
       <workItem from="1739458031083" duration="161000" />
+      <workItem from="1739458231734" duration="8023000" />
+      <workItem from="1739518388893" duration="2199000" />
+      <workItem from="1739526628010" duration="2665000" />
+      <workItem from="1739529568053" duration="1001000" />
     </task>
     <servers />
   </component>

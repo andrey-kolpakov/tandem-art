@@ -1,0 +1,19 @@
+@use 'imports' as *;
+
+.button{
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+
+  border-radius: 2rem;
+  padding: 1rem 3rem;
+  border: 2px solid #fff;
+  background: rgba($color: #fff, $alpha: 0);
+  transition: all .3s ease-in-out;
+
+  &:hover{
+    background: rgba($color: #fff, $alpha: 1);
+    color: black;
+  }
+}
+

@@ -1,0 +1,10 @@
+@use '@/components/imports/imports' as *;
+
+.about-us-block {
+  text-align: center;
+
+  h1 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+}
