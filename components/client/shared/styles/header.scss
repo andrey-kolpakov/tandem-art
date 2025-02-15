@@ -1,0 +1,31 @@
+@use 'imports' as *;
+
+.container--header{
+  //margin-top: 2rem !important;
+  //margin: 2rem;
+}
+
+.header-main-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 2rem 0rem;
+}
+
+.info-item__content{
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+}
+
+.header-main-info__info-item {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.info-item__icon {
+  height: 3rem;
+  width: 3rem;
+}
+

@@ -1,0 +1,36 @@
+@use 'imports' as *;
+
+.footer-background{
+  background: $light-grey;
+}
+
+.footer-content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 3rem;
+
+  padding: 3rem 0rem;
+}
+
+.footer--container{
+  margin-bottom:0 ;
+}
+
+.footer-content > *, .footer-content > * >*{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer-description, .footer-menu ul, .footer-contacts div{
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+
+footer{
+  h4{
+    font-weight: 400;
+  }
+}

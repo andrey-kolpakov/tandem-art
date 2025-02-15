@@ -1,0 +1,23 @@
+@use 'imports' as *;
+
+.form-block{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) ;
+
+  min-height: 50vh;
+}
+
+.form-block__image{
+  background-image: url(/images/diz.jpg);
+}
+
+.form-block__form{
+  padding: 2rem;
+  background: rgba($color: $light-grey, $alpha: 0.3);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  justify-content: center;
+}

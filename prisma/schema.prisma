@@ -1,0 +1,75 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("POSTGRES_URL_NON_POOLING")
+}
+
+model User {
+  id       Int    @id @default(autoincrement())
+  email    String @unique
+  fullName String
+  password String
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  role UserRole @default(USER)
+}
+
+enum UserRole {
+  ADMIN
+  USER
+}
+
+//Sliders
+model SliderOfBanners {
+  id    Int    @id @default(autoincrement())
+  title String
+
+  images SliderImage[]
+}
+
+model SliderImage {
+  id       Int    @id @default(autoincrement())
+  imageUrl String
+  altText  String
+
+  SliderBanner   SliderOfBanners? @relation(fields: [sliderBannerId], references: [id])
+  sliderBannerId Int?
+
+  buttonUrl  String
+  buttonText String
+
+  headerText    String
+  subHeaderText String
+}
+
+model Product {
+  id          Int    @id @default(autoincrement())
+  title       String
+  description String
+  price       Float
+  imageUrl    String
+  altText     String
+}
+
+model Review {
+  id          Int    @id @default(autoincrement())
+  name        String
+  description String
+  imageUrl    String
+
+  linkTitle String?
+  linkUrl   String?
+}
+
+model Order {
+  id       Int     @id @default(autoincrement())
+  name     String
+  phone    String
+  comments String?
+}
