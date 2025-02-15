@@ -17,7 +17,7 @@ const include = {
 
 export const getSliderByTitle = async (titleString: string) => {
 
-    const sliderData = await prisma.SliderOfBanners.findFirst({
+    const sliderData = await prisma.sliderOfBanners.findFirst({
         where: { title: titleString },
         include: include,
     })
