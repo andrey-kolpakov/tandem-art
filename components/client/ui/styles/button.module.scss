@@ -1,6 +1,6 @@
 @use 'imports' as *;
 
-.button{
+.button {
   color: #fff;
   display: inline-block;
   vertical-align: middle;
@@ -11,23 +11,22 @@
   border: 2px solid #fff;
   background: rgba($color: #fff, $alpha: 0);
   transition: all .3s ease-in-out;
+  display: inline-block;
 
 
-  &:hover{
+  &:hover {
     background: rgba($color: #fff, $alpha: 1);
     color: black;
   }
 
-  &--blue{
+  &--blue {
     border: 2px solid #1740ac;
     color: #1740ac;
 
-    &:hover{
+    &:hover {
       background: #1740ac;
       color: white;
     }
   }
-
-  display: inline-block;
 }
 
