@@ -14,6 +14,8 @@ import styles from './styles/advertSlider.module.scss'
 
 import {Container, Button} from '@/components/client'
 
+import {v4} from 'uuid'
+
 interface Props {
     images: SliderImage[]
 }

@@ -9,10 +9,12 @@ import './styles/form.scss'
 
 interface Props {
     className?: string;
+    formOrigin?: string
     submitAction: (formData: FormData) => Promise<void>; // Функция для отправки на сервер
 }
 
-export const Form: React.FC<Props> = ({ className, submitAction }) => {
+export const Form: React.FC<Props> = ({ className, submitAction, formOrigin }) => {
+
     const [formData, setFormData] = useState({ name: "", phone: "" });
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
@@ -32,7 +34,15 @@ export const Form: React.FC<Props> = ({ className, submitAction }) => {
             data.append("name", formData.name);
             data.append("phone", formData.phone);
 
+            if(formOrigin){
+                data.append("comments", formOrigin);
+            } else {
+                data.append("comments", 'Комментариев нет');
+            }
+
             await submitAction(data);
+
+            setFormData({ name: "", phone: "" })
         } catch (err) {
             setError("Ошибка отправки данных. Попробуйте снова.");
         } finally {

@@ -31,7 +31,7 @@ export const ProductCard: React.FC<Props> = ({className, itemData}) => {
                     {itemData.description}
                 </p>
 
-                <Form submitAction={submitForm}/>
+                <Form submitAction={submitForm} formOrigin={`Заявка из карточки продукта ${itemData.title}`}/>
             </div>
 
 

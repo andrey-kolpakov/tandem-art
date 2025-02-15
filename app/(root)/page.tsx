@@ -35,7 +35,7 @@ export default async function Home() {
             </Container>
 
             <Container>
-                <FormBlock/>
+                <FormBlock formBlockOrigin={'Главная страница блок-форма'}/>
             </Container>
         </div>
     );

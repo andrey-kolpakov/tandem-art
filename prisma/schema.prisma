@@ -57,7 +57,7 @@ model Product {
   altText     String
 }
 
-model review {
+model Review {
   id          Int    @id @default(autoincrement())
   name        String
   description String
@@ -65,4 +65,11 @@ model review {
 
   linkTitle String?
   linkUrl   String?
+}
+
+model Order {
+  id       Int     @id @default(autoincrement())
+  name     String
+  phone    String
+  comments String?
 }

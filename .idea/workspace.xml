@@ -4,7 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cd328da-717d-42ef-989b-7df31b355962" name="Changes" comment="" />
+    <list default="true" id="7cd328da-717d-42ef-989b-7df31b355962" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/services/orders.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/actions/submitForm.ts" beforeDir="false" afterPath="$PROJECT_DIR$/actions/submitForm.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(root)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/client/shared/advertSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/advertSlider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/client/shared/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/client/shared/form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/client/shared/formBlock.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/formBlock.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/client/shared/productCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/productCard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/client/shared/reviews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/reviews.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/client/shared/styles/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/styles/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/client/ui/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/ui/button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pnpm-lock.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/dbClient.ts" beforeDir="false" afterPath="$PROJECT_DIR$/services/dbClient.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/types/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/types/types.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,6 +100,8 @@
       <workItem from="1739526628010" duration="2665000" />
       <workItem from="1739529568053" duration="1001000" />
       <workItem from="1739544558683" duration="1195000" />
+      <workItem from="1739602910072" duration="6132000" />
+      <workItem from="1739609349790" duration="595000" />
     </task>
     <servers />
   </component>

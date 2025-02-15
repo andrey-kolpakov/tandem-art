@@ -14,12 +14,16 @@ export const Footer: React.FC = ({}) => {
                 <footer className="footer">
                     <div className="footer-content">
                         <div className="footer-column footer-left">
-                            {/*<div className="footer-logo">*/}
-                            {/*    <img src={logoSimple} alt="Company logo" className="company-logo" />*/}
-                            {/*</div>*/}
-                            <p className="footer-description tp-thin">
-                                Мы уже много лет занимаемся тем что помогаем людям реализовывать их идеи в виде красивого оформления. Наша команда состоит из проффесионалов своего дела. Мы несем 100% ответсвенность за свою работу. И делаем качественно!
-                            </p>
+
+                            <p>© 2020-2025. Все права защищены</p>
+                            <div className="footer-description tp-thin">
+                                <p>Интернет-магазин Vasilisav Cashmere </p>
+                                <p> ИП Круглоголов Игорь Николаевич</p>
+                                <p>ИНН 503808237151</p>
+                                <p>Адрес: ул. Мустафы Озтюрка 11 А, офис 1</p>
+
+
+                            </div>
                             <Link className="footer-rights" href="/privacy-policy">Политика конфиденциальности</Link>
                         </div>
 
@@ -28,14 +32,14 @@ export const Footer: React.FC = ({}) => {
                                 <h4>Меню сайта</h4>
                                 <ul>
                                     <li>
-                                        <Link href="/">Главная</Link>
+                                        <Link href="/" className={'tp-thin'}>Главная</Link>
                                     </li>
                                     <li>
-                                        <Link href="/about">О нас</Link>
+                                        <Link href="/about" className={'tp-thin'}>О нас</Link>
                                     </li>
 
                                     <li>
-                                        <Link href="/projects-list">Наши работы</Link>
+                                        <Link href="/projects-list" className={'tp-thin'}>Наши работы</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -44,17 +48,17 @@ export const Footer: React.FC = ({}) => {
                         <div className="footer-column footer-right">
                             <div className="footer-contacts">
                                 <h4>Контакты</h4>
-                                <p>
-                                    Телефон:
-                                    <br/>
-                                    <a href="tel:+77012212212">+7 (701) 221 2212</a>
-                                </p>
+                                <div>
+                                    <h4>Телефон:</h4>
 
-                                <p>
-                                    Email:
-                                    <br/>
-                                    <a href="mailto:director@saras.kz">director@saras.kz</a>
-                                </p>
+                                    <a href="tel:+77272740278" className={'tp-thin'}>+7 (727) 274-02-78</a>
+                                </div>
+
+                                <div>
+                                    <h4>Email:</h4>
+
+                                    <a href="mailto:plus_tandem@mail.ru" className={'tp-thin'}>plus_tandem@mail.ru</a>
+                                </div>
                             </div>
                         </div>
                     </div>

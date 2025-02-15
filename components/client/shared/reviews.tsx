@@ -14,6 +14,8 @@ import styles from './styles/reviews.module.scss'
 
 import Image from 'next/image'
 
+import {v4} from 'uuid'
+
 interface Props {
     className?: string;
     reviewsData: Review[]

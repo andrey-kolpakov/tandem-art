@@ -50,3 +50,9 @@ export interface Review {
     linkUrl?: string;   // Опциональное поле
 }
 
+export interface Order {
+    id?: number;
+    name: string;
+    phone: string;
+    comments?: string;
+}
