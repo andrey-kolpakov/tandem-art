@@ -23,7 +23,7 @@ export const ProductsList: React.FC<Props> = ({productsData}) => {
                 return (
                     <div key={index} style={{backgroundImage: `url(${product.imageUrl})`}}
                          className="product-list__item" onClick={evt => openPopup(<ProductCard itemData={product}/>)}>
-                        <h3>{product.title}</h3>
+                        <h3 >{product.title}</h3>
 
                     </div>
                 )

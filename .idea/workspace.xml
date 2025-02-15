@@ -4,34 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7cd328da-717d-42ef-989b-7df31b355962" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/assets/images/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/client/shared/advertSlider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/client/shared/container.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/client/shared/header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/client/shared/menu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/client/styles/container.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/client/styles/header.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/client/styles/imports.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/client/styles/menu.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/client/ui/navlink.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/banners.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/dbClient.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/client/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/client/header.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/client/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/client/menu.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/client/popup.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/popup.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/client/styles/popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/styles/popup.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/imports/typography.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/imports/typography.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/imports/vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/imports/vars.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/seed.ts" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/seed.ts" afterDir="false" />
-    </list>
+    <list default="true" id="7cd328da-717d-42ef-989b-7df31b355962" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,6 +80,7 @@
       <workItem from="1739518388893" duration="2199000" />
       <workItem from="1739526628010" duration="2665000" />
       <workItem from="1739529568053" duration="1001000" />
+      <workItem from="1739544558683" duration="1195000" />
     </task>
     <servers />
   </component>

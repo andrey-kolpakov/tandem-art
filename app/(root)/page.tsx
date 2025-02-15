@@ -3,6 +3,8 @@ import "./page.scss";
 import {Container, AdvertSlider, ProductsList, Reviews, FormBlock,} from "@/components/client";
 import {SliderOfBanners, Product, Review} from "@/types/types";
 
+import {Suspense} from "react";
+
 import {dbClient} from "@/services/dbClient";
 
 export default async function Home() {

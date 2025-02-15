@@ -11,23 +11,24 @@ interface Props {
     onClickHandler?: () => void;
 }
 
-export const Button: React.FC<Props> = ({ className, children, href, onClickHandler }) => {
-    console.log(className)
+export const Button: React.FC<Props> = ({className, children, href, onClickHandler}) => {
+    let arrayClassName: string[] | undefined
+    if (className) {
+        console.log(className)
+        arrayClassName = className?.split(" ");
+    }
 
-    const arrayClassName :string[] | undefined = className?.split(" ");
-
-    // Если передан href, рендерим ссылку
     if (href) {
         return (
-            <Link href={href} className={clsx(styles.button, (className? arrayClassName?.map(el => styles[el]) : ''))}>
+            <Link href={href} className={clsx(styles.button, (className ? arrayClassName?.map(el => styles[el]) : ''))}>
                 {children}
             </Link>
         );
     }
 
-    // Если href нет, рендерим кнопку
     return (
-        <button className={clsx(styles.button, (className? arrayClassName?.map(el => styles[el]) : ''))} onClick={onClickHandler}>
+        <button className={clsx(styles.button, (className ? arrayClassName?.map(el => styles[el]) : ''))}
+                onClick={onClickHandler}>
             {children}
         </button>
     );
