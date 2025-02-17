@@ -6,7 +6,7 @@
   vertical-align: middle;
   cursor: pointer;
 
-  border-radius: 2rem;
+  //border-radius: 2rem;
   padding: 1rem 3rem;
   border: 2px solid #fff;
   background: rgba($color: #fff, $alpha: 0);
@@ -27,6 +27,10 @@
       background: #1740ac;
       color: white;
     }
+  }
+
+  &--on-white{
+
   }
 }
 

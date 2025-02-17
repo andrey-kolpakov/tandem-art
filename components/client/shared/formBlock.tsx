@@ -15,7 +15,6 @@ interface Props {
 export const FormBlock: React.FC<Props> = ({className, formBlockOrigin}) => {
     return (
         <div className={'form-block'}>
-
             <div className={'form-block__image'}></div>
             <div className={'form-block__form'}>
                 <h2>Ответим на ваши вопросы</h2>

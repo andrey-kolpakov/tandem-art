@@ -70,7 +70,7 @@ export const Form: React.FC<Props> = ({ className, submitAction, formOrigin }) =
                 required
             />
 
-            <Button className={'button--blue'}>{loading ? "Отправка..." : "Отправить"}</Button>
+            <Button className={'button--on-white'}>{loading ? "Отправка..." : "Отправить"}</Button>
 
             {error && <p className="error">{error}</p>}
         </form>

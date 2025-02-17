@@ -1,0 +1,78 @@
+@use 'imports' as *;
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 100%;
+  margin: auto;
+}
+
+.gallery-item {
+  position: relative;
+  background-color: #4c60af;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  height: 15rem;
+
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+
+  & .hover-info{
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: $main-color, $alpha: 0.7);
+
+    transition: all .3s ease-in-out;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &:hover{
+    & .hover-info{
+      opacity: 1;
+    }
+
+    & .gallery-text{
+      opacity: 0;
+    }
+  }
+}
+
+.size-6 {
+  grid-column: span 6;
+}
+
+.size-3 {
+  grid-column: span 3;
+}
+
+.size-2 {
+  grid-column: span 2;
+}
+
+.gallery-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.gallery-text {
+  background-color: $main-color;
+  width: 100%;
+  padding: .5rem 1rem;
+  transition: all .3s ease-in-out;
+
+
+}

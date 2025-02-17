@@ -13,11 +13,13 @@
 
 .form-block__form{
   padding: 2rem;
-  background: rgba($color: $light-grey, $alpha: 0.3);
+  background: rgba($color: $main-color, $alpha: 1);
 
   display: flex;
   flex-direction: column;
   gap: 2rem;
 
   justify-content: center;
+
+  color: white;
 }
