@@ -1,0 +1,35 @@
+@use 'imports' as *;
+
+.vertical-card {
+  display: grid;
+  grid-auto-rows: 2fr 1fr;
+
+  &:nth-child(odd) {
+
+    .vertical-card__text {
+      background-color: $main-color--light;
+    }
+  }
+
+  a{
+    text-decoration: underline;
+  }
+}
+
+.vertical-card__text {
+  display: grid;
+  grid-auto-columns: auto;
+  gap: 1rem;
+
+  padding: 1rem;
+
+  background-color: $main-color;
+  color: white;
+}
+
+.vertical-card__image {
+  object-fit: cover;
+  width: 100%;
+
+
+}

@@ -1,0 +1,55 @@
+@use 'imports' as *;
+
+.ford-component-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  h2{
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  hr{
+    background-color: #3D3D3D;
+    height: 1px;
+    width: 100%;
+  }
+
+  p{
+    text-align: center;
+  }
+}
+
+.ford-quote{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.progress-container {
+  width: 100%;
+  //max-width: 500px;
+  margin: auto;
+}
+
+.progress-bar-container {
+  margin-bottom: 10px;
+}
+
+.progress-label {
+  //color: white;
+  margin-bottom: 5px;
+}
+
+.progress-background {
+  background-color: rgb(193, 193, 193);
+  height: 24px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: $main-color;
+}

@@ -1,7 +1,7 @@
 @use 'imports' as *;
 
 .container {
-    max-width: 1200px;
+    max-width: $max-width-container;
     margin: 0 auto;
 }
 

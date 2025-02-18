@@ -1,0 +1,22 @@
+@use 'imports' as *;
+
+.special-header-container{
+  display: flex;
+  gap: 1rem;
+
+  align-items: center;
+  margin-bottom: 1rem;
+
+  *{
+    font-weight: 1000;
+    text-transform: uppercase;
+  }
+}
+
+.special-header{
+  font-size: 2rem;
+}
+
+.special-subheader{
+
+}

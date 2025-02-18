@@ -38,5 +38,4 @@ export async function submitForm(data: FormData) {
     } catch (error) {
         console.error("Ошибка при отправке в Telegram:", error);
     }
-
 }
