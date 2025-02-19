@@ -73,6 +73,24 @@
   width: 100%;
   padding: .5rem 1rem;
   transition: all .3s ease-in-out;
+}
 
+.gallery-grid__header-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
 
+.gallery-grid__header{
+  background-color: $main-color;
+  border-radius: 1rem;
+  padding: 1rem 1rem;
+  color: white;
+}
+
+.gallery-grid__mobile-link{
+  color: $main-color--dark;
+  text-decoration: underline;
+  font-weight: 700;
 }

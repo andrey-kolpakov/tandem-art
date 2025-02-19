@@ -83,7 +83,7 @@ export default async function Home() {
 
             <Container pd={true} id={'stickers'}>
                 <GalleryData galleryData={stickersInfo.galleryData} subheader={stickersInfo.subheader}
-                             header={stickersInfo.header} mainDescription={stickersInfo.text}/>
+                             header={stickersInfo.header} mainDescription={stickersInfo.text} link={'stickers'}/>
             </Container>
 
             <hr/>
@@ -94,7 +94,7 @@ export default async function Home() {
 
             <Container pd={true}>
                 <GalleryData galleryData={interiorInfo.galleryData} subheader={interiorInfo.subheader}
-                             header={interiorInfo.header} mainDescription={interiorInfo.text}/>
+                             header={interiorInfo.header} mainDescription={interiorInfo.text} link={'interior'}/>
             </Container>
 
             <hr/>

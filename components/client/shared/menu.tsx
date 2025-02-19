@@ -7,6 +7,8 @@ import "@/components/client/shared/styles/menu.scss";
 import { isDesktop, isMobile } from "react-device-detect";
 import { usePopupStore } from "@/store/popupStore";
 
+import { GiHamburgerMenu } from "react-icons/gi";
+
 interface Props {
     className?: string;
 }
@@ -52,8 +54,8 @@ export const Menu: React.FC<Props> = ({ className }) => {
 
     if (deviceType === "mobile") {
         return (
-            <div onClick={() => openPopup(<MenuJSX closePopup={closePopup} />)}>
-                Открыть меню
+            <div onClick={() => openPopup(<MenuJSX closePopup={closePopup} />)} className={'open-menu-button'}>
+                <GiHamburgerMenu/>
             </div>
         );
     }
