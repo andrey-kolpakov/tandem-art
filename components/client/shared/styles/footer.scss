@@ -1,7 +1,8 @@
 @use 'imports' as *;
 
 .footer-background{
-  background: $light-grey;
+  background: $main-color;
+    color: white;
 }
 
 .footer-content{

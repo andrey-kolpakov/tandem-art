@@ -17,11 +17,12 @@ interface Props {
     pd?: boolean;
     mtnone?: boolean;
     marginNone?: boolean;
+    id?: string;
 }
 
 // Контейнер с поддержкой background и ref
 export const Container = forwardRef<HTMLDivElement, Props>(
-    ({ className, classNameOuter, children, imageURL, fullScreen, centeredVertical, centeredHorizontal, stretchContent, pd, mtnone, marginNone}, ref) => {
+    ({ className, id, classNameOuter, children, imageURL, fullScreen, centeredVertical, centeredHorizontal, stretchContent, pd, mtnone, marginNone}, ref) => {
         return (
             <div
                 // Передаём ref здесь
@@ -35,6 +36,8 @@ export const Container = forwardRef<HTMLDivElement, Props>(
                     'container-outer--margin-none' : marginNone
                 })}
                 style={{ backgroundImage: `url(${imageURL ? imageURL.src : ''})` }}
+
+                id={id}
             >
                 <div className={clsx(className, 'container')} ref={ref}>{children}</div>
             </div>

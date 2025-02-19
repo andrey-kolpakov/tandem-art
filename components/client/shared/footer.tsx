@@ -10,7 +10,7 @@ import './styles/footer.scss'
 export const Footer: React.FC = ({}) => {
     return (
         <div className={'footer-background'}>
-            <Container classNameOuter={'footer--container'}>
+            <Container classNameOuter={'footer--container'} marginNone={true}>
                 <footer className="footer">
                     <div className="footer-content">
                         <div className="footer-column footer-left">

@@ -1,5 +1,12 @@
 @use 'imports' as *;
 
+.header-content{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);

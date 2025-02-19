@@ -2,11 +2,23 @@
 
 nav{
   display: flex;
-  width: 100%;
-  background-color: $main-color;
+  width: $max-width-container;
   color: white;
   text-transform: uppercase;
   gap: 2rem;
-  justify-content: center;
+  //justify-content: flex-start;
   padding: .5rem 0;
+
+
+}
+
+.menu-container{
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  background-color: $main-color;
+
+  display: flex;
+  justify-content: center;
 }
