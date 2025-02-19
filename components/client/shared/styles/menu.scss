@@ -1,12 +1,62 @@
 @use 'imports' as *;
 
-nav{
+nav {
   display: flex;
-  width: 100%;
-  background-color: $main-color;
+  width: $max-width-container;
   color: white;
   text-transform: uppercase;
   gap: 2rem;
-  justify-content: center;
+  //justify-content: flex-start;
   padding: .5rem 0;
+
+  @include breakpoint($mobile-bp) {
+    flex-direction: column;
+    gap: 1rem;
+
+    * {
+      text-align: center;
+    }
+
+    a {
+      background-color: $main-color;
+      padding: 1rem 1rem;
+      display: inline-block;
+    }
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  background-color: $main-color;
+
+  display: flex;
+  justify-content: center;
+
+  @include breakpoint($mobile-bp) {
+    position: unset;
+    background-color: unset;
+  }
+}
+
+.open-menu-button{
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+
+  background-color: $main-color;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+
+  *{
+    color: white;
+  }
 }

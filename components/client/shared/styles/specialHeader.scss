@@ -15,6 +15,10 @@
 
 .special-header{
   font-size: 2rem;
+
+  @include breakpoint($mobile-bp){
+    font-size: 1.5rem;
+  }
 }
 
 .special-subheader{

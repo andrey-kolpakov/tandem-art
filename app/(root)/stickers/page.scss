@@ -1,0 +1,22 @@
+@use '@/components/imports/imports' as *;
+
+.advantage-page-list{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.advantage-page-list__item{
+  padding-left: 1rem;
+  position: relative;
+
+  &::before{
+    content: '';
+    background-color: $main-color;
+    width: .5rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

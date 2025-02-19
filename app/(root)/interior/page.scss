@@ -1,0 +1,47 @@
+@use '@/components/imports/imports' as *;
+
+h2{
+  margin-bottom: 1rem;
+}
+
+.advantage-page-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.advantage-page-list__item {
+  padding-left: 1rem;
+  position: relative;
+
+  &::before {
+    content: '';
+    background-color: $main-color;
+    width: .5rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  li {
+    padding-left: 1rem;
+    position: relative;
+
+    &::before {
+      content: '';
+      background-color: $main-color;
+      width: .5rem;
+      height: .5rem;
+      position: absolute;
+      top: .5rem;
+      left: 0;
+    }
+  }
+}

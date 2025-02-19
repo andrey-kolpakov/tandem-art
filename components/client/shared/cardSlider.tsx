@@ -15,6 +15,8 @@ import {Autoplay, Pagination, EffectFade} from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/bundle'
 
+import {scrollToElement} from "@/utils/scrollToElement";
+
 export const CardSlider: React.FC<Props> = ({className, images, size}) => {
     if (size.width === 0) {
         return ''

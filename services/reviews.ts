@@ -4,7 +4,7 @@ export const getReviewsAll = async () => {
 
     const reviews = await prisma.review.findMany()
 
-    // console.log(products)
+    // console.log(reviews)
 
     return reviews
 }

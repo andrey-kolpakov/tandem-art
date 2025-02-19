@@ -1,5 +1,7 @@
 import "./page.scss";
 
+import {prisma} from '@/prisma/prisma-client'
+
 import {
     Container,
     AdvertSlider,
@@ -8,12 +10,15 @@ import {
     FormBlock,
     GridComponent,
     Advantages,
-    Portfolio,
+    ImagesGallery,
     Ford,
     GalleryData,
-    WideformatPrint
+    WideformatPrint,
+
 } from "@/components/client";
 import {SliderOfBanners, Product, Review} from "@/types/types";
+
+import {portfolioImages} from '@/data/portfolioImages'
 
 import {dbClient} from "@/services/dbClient";
 
@@ -26,6 +31,7 @@ export default async function Home() {
     const reviews: Review[] = await dbClient.reviews.getReviewsAll() as Review[]
 
     // console.log(products)
+    // console.log(await prisma.product.findMany())
 
 
     return (
@@ -36,6 +42,8 @@ export default async function Home() {
                 <GridComponent/>
             </Container>
 
+            <hr/>
+
             {/*<Container className={'about-us-block'}>*/}
             {/*    <h1>О нас</h1>*/}
             {/*    <p className={'tp-thin'}>Мы уже много лет занимаемся тем что помогаем людям реализовывать их идеи в виде*/}
@@ -44,11 +52,13 @@ export default async function Home() {
             {/*        делаем качественно!</p>*/}
             {/*</Container>*/}
 
-            <Container>
+            <Container pd={true}>
                 <Advantages/>
             </Container>
 
-            <Container>
+            <hr />
+
+            <Container pd={true} id={'wideformatprint'}>
                 <WideformatPrint/>
             </Container>
 
@@ -56,23 +66,40 @@ export default async function Home() {
             {/*    <ProductsList productsData={products}/>*/}
             {/*</Container>*/}
 
-            <Container>
+            <hr/>
+
+            <Container pd={true}>
                 <Ford/>
             </Container>
 
-            <Container>
-                <GalleryData galleryData={stickersInfo.galleryData} subheader={stickersInfo.subheader} header={stickersInfo.header} mainDescription={stickersInfo.text}/>
+            <hr/>
+
+            <Container pd={true}>
+                <ImagesGallery images={portfolioImages} header={'Портфолио'}/>
             </Container>
 
-            <Container>
-                <Reviews reviewsData={reviews}/>
+            <hr/>
+
+
+            <Container pd={true} id={'stickers'}>
+                <GalleryData galleryData={stickersInfo.galleryData} subheader={stickersInfo.subheader}
+                             header={stickersInfo.header} mainDescription={stickersInfo.text} link={'stickers'}/>
             </Container>
 
-            <Container>
-                <GalleryData galleryData={interiorInfo.galleryData} subheader={interiorInfo.subheader} header={interiorInfo.header} mainDescription={interiorInfo.text}/>
+            <hr/>
+
+            {/*<Container>*/}
+            {/*    <Reviews reviewsData={reviews}/>*/}
+            {/*</Container>*/}
+
+            <Container pd={true}>
+                <GalleryData galleryData={interiorInfo.galleryData} subheader={interiorInfo.subheader}
+                             header={interiorInfo.header} mainDescription={interiorInfo.text} link={'interior'}/>
             </Container>
 
-            <Container>
+            <hr/>
+
+            <Container pd={true} id={'contacts'}>
                 <FormBlock formBlockOrigin={'Главная страница блок-форма'}/>
             </Container>
         </div>

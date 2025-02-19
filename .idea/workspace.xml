@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cd328da-717d-42ef-989b-7df31b355962" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/client/shared/cardSlider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/client/shared/gridComponent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/client/shared/styles/gridComponent.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actions/submitForm.ts" beforeDir="false" afterPath="$PROJECT_DIR$/actions/submitForm.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(root)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/client/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/client/shared/styles/container.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/styles/container.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/client/shared/galleryData.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/galleryData.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/client/shared/menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/client/shared/styles/gridComponent.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/styles/gridComponent.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/client/shared/styles/menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/styles/menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/client/shared/styles/stickers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/styles/stickers.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/imports/vars.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/imports/vars.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +39,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/web/tandem-art/components/client/styles&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/web/tandem-art/data&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -49,18 +48,18 @@
     &quot;npm.prisma:push.executor&quot;: &quot;Run&quot;,
     &quot;npm.prisma:seed.executor&quot;: &quot;Run&quot;,
     &quot;npm.prisma:studio.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.idesettings.emmet&quot;,
     &quot;ts.external.directory.path&quot;: &quot;D:\\web\\tandem-art\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\web\tandem-art\data" />
       <recent name="D:\web\tandem-art\components\client\styles" />
       <recent name="D:\web\tandem-art\components\assets\images" />
       <recent name="D:\web\tandem-art" />
       <recent name="D:\web\tandem-art\components\imports" />
-      <recent name="D:\web\tandem-art\store" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\web\tandem-art\components\client\shared" />
@@ -94,7 +93,10 @@
       <workItem from="1739602910072" duration="6132000" />
       <workItem from="1739609349790" duration="4103000" />
       <workItem from="1739708257844" duration="13000" />
-      <workItem from="1739786772443" duration="6033000" />
+      <workItem from="1739786772443" duration="16884000" />
+      <workItem from="1739966641255" duration="26000" />
+      <workItem from="1739966758442" duration="14374000" />
+      <workItem from="1739981951232" duration="1276000" />
     </task>
     <servers />
   </component>

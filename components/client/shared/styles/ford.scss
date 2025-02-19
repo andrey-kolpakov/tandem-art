@@ -25,6 +25,13 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+
+  @include breakpoint($mobile-bp){
+    grid-template-columns: unset;
+
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .progress-container {

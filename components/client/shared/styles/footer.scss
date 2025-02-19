@@ -1,7 +1,8 @@
 @use 'imports' as *;
 
 .footer-background{
-  background: $light-grey;
+  background: $main-color;
+    color: white;
 }
 
 .footer-content{
@@ -11,6 +12,11 @@
   gap: 3rem;
 
   padding: 3rem 0rem;
+
+  @include breakpoint($mobile-bp){
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .footer--container{

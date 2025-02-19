@@ -14,13 +14,13 @@ interface Props {
 const ButtonComponent: React.FC<Props> = ({ className, children, href, onClickHandler }) => {
     const arrayClassName = useMemo(() => {
         if (className) {
-            console.log(className);
+            // console.log(className);
             return className.split(" ");
         }
         return undefined;
     }, [className]);
 
-    console.log("ререндер Button");
+    // console.log("ререндер Button");
 
     if (href) {
         return (
