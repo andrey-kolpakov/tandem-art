@@ -9,6 +9,8 @@ import {scrollToElement} from "@/utils/scrollToElement"; //
 import './styles/gridComponent.scss';
 
 import Image from 'next/image';
+import {isDesktop, isMobile} from "react-device-detect";
+import Link from "next/link";
 
 interface GridItem {
     text?: string;
@@ -69,6 +71,7 @@ const gridCells: GridItem[] = Array.from({length: totalCells}, (_, index) => {
 
 export const GridComponent: React.FC<Props> = ({className}) => {
     const gridRef = useRef<HTMLDivElement>(null);
+    const [deviceType, setDeviceType] = useState("");
     const [cellSize, setCellSize] = useState({width: 0, height: 0});
 
     useEffect(() => {
@@ -76,9 +79,18 @@ export const GridComponent: React.FC<Props> = ({className}) => {
             const {width, height} = gridRef.current.getBoundingClientRect();
             setCellSize({width: width / 6, height: height / 3});
         }
+
+        if (isMobile) setDeviceType("mobile");
+        else if (isDesktop) setDeviceType("desktop");
     }, []);
 
+
+
+
+
     return (
+
+
         <>
             <div className={'header-content'}>
                 <Image src={'/images/logo.webp'} width={200} height={100} alt={'logo'}/>
@@ -89,32 +101,48 @@ export const GridComponent: React.FC<Props> = ({className}) => {
                 </div>
             </div>
 
+            {   deviceType === 'desktop' ?
+                <div className={clsx("grid-container", className)} ref={gridRef}>
+                    {gridCells.map((cell, index) => (
+                        <div
+                            key={`grid-element__${index}`}
+                            className={clsx("grid-item", {
+                                empty: cell.isEmpty,
+                                filled: !cell.isEmpty,
+                                slider: cell.type === 'slider'
+                            })}
+                            onClick={(e) => {
+                                if (!cell.isEmpty && cell.type === "link") {
+                                    scrollToElement(e, cell.link);
+                                }
+                            }}
+                        >
+                            {cell.type === 'slider' ? (
+                                <div className="slider-placeholder">
+                                    <CardSlider images={cell.items || []} size={cellSize}/>
+                                </div>
+                            ) : (
+                                cell.text
+                            )}
+                        </div>
+                    ))}
+                </div> :
 
-            <div className={clsx("grid-container", className)} ref={gridRef}>
-                {gridCells.map((cell, index) => (
-                    <div
-                        key={`grid-element__${index}`}
-                        className={clsx("grid-item", {
-                            empty: cell.isEmpty,
-                            filled: !cell.isEmpty,
-                            slider: cell.type === 'slider'
-                        })}
-                        onClick={(e) => {
-                            if (!cell.isEmpty && cell.type === "link") {
-                                scrollToElement(e, cell.link);
+                <div className={'header-links'}>
+                    {
+                        gridData.map((el, index) => {
+
+                            if (el.type === 'link') {
+                                return (
+                                    <div key={`header-links__link-${index}`} className={'header-links__link'}>
+                                        <Link href={el.link}>{el.text}</Link>
+                                    </div>
+                                )
                             }
-                        }}
-                    >
-                        {cell.type === 'slider' ? (
-                            <div className="slider-placeholder">
-                                <CardSlider images={cell.items || []} size={cellSize}/>
-                            </div>
-                        ) : (
-                            cell.text
-                        )}
-                    </div>
-                ))}
-            </div>
+                        })
+                    }
+                </div>
+            }
         </>
     );
 };
