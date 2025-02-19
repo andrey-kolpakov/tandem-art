@@ -12,6 +12,11 @@
   gap: 3rem;
 
   padding: 3rem 0rem;
+
+  @include breakpoint($mobile-bp){
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .footer--container{

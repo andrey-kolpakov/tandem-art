@@ -3,6 +3,12 @@
 .container {
     max-width: $max-width-container;
     margin: 0 auto;
+
+    @include breakpoint($mobile-bp){
+        max-width: 100%;
+        padding: 0rem .3rem;
+        overflow: hidden;
+    }
 }
 
 .container-outer {
@@ -34,6 +40,10 @@
     &--pd{
         padding: 6rem 0rem;
         //border-top: #3D3D3D solid 1px;
+
+        @include breakpoint($mobile-bp){
+            padding: 2rem 0rem;
+        }
     }
 
     &--margin-top-0{
@@ -43,4 +53,6 @@
     &--margin-none{
         margin: 0;
     }
+
+
 }

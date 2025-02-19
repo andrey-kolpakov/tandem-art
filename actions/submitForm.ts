@@ -8,7 +8,7 @@ export async function submitForm(data: FormData) {
     const phone = data.get("phone") as string;
     const comments = data.get("comments") as string;
 
-    console.log("Получены данные:", {name, phone, comments});
+    // console.log("Получены данные:", {name, phone, comments});
 
     try {
         await dbClient.orders.postOrder({name, phone, comments});

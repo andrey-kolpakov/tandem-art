@@ -6,6 +6,11 @@
   gap: 1rem;
 
   width: 100%;
+
+  @include breakpoint($mobile-bp){
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: unset;
+  }
 }
 
 .advantages-item {

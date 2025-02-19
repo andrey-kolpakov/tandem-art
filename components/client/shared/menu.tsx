@@ -1,27 +1,62 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import clsx from "clsx";
-import {scrollToElement} from "@/utils/scrollToElement"; // Импортируем функцию
-
+import { scrollToElement } from "@/utils/scrollToElement";
 import "@/components/client/shared/styles/menu.scss";
+import { isDesktop, isMobile } from "react-device-detect";
+import { usePopupStore } from "@/store/popupStore";
 
 interface Props {
     className?: string;
 }
 
-export const Menu: React.FC<Props> = ({className}) => {
-    return (
+function MenuJSX({ closePopup }: { closePopup?: () => void }) {
+    const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+        if (closePopup) closePopup(); // Закрываем попап после клика
+        scrollToElement(e, id);
+    };
 
-        <div className={'menu-container'}>
-            <nav className={clsx(className, "")}>
-                <a href="#wideformatprint" onClick={(e) => scrollToElement(e, "wideformatprint")}>Широкоформатная
-                    печать</a>
-                <a href="#stickers" onClick={(e) => scrollToElement(e, "stickers")}>Стикеры</a>
-                <a href="#polygraph" onClick={(e) => scrollToElement(e, "polygraph")}>Полиграфия</a>
-                <a href="#portfolio" onClick={(e) => scrollToElement(e, "portfolio")}>Портфолио</a>
-                <a href="#contacts" onClick={(e) => scrollToElement(e, "contacts")}>Контакты</a>
+    return (
+        <div className="menu-container">
+            <nav>
+                <a href="/" onClick={() => closePopup && closePopup()}>Главная</a>
+                <a href="#wideformatprint" onClick={(e) => handleClick(e, "wideformatprint")}>
+                    Широкоформатная печать
+                </a>
+                <a href="#stickers" onClick={(e) => handleClick(e, "stickers")}>
+                    Стикеры
+                </a>
+                <a href="#polygraph" onClick={(e) => handleClick(e, "polygraph")}>
+                    Полиграфия
+                </a>
+                <a href="#portfolio" onClick={(e) => handleClick(e, "portfolio")}>
+                    Портфолио
+                </a>
+                <a href="#contacts" onClick={(e) => handleClick(e, "contacts")}>
+                    Контакты
+                </a>
             </nav>
         </div>
     );
+}
+
+export const Menu: React.FC<Props> = ({ className }) => {
+    const { openPopup, closePopup } = usePopupStore();
+    const [deviceType, setDeviceType] = useState("");
+
+    useEffect(() => {
+        if (isMobile) setDeviceType("mobile");
+        else if (isDesktop) setDeviceType("desktop");
+    }, []);
+
+    if (deviceType === "mobile") {
+        return (
+            <div onClick={() => openPopup(<MenuJSX closePopup={closePopup} />)}>
+                Открыть меню
+            </div>
+        );
+    }
+
+    return <MenuJSX />;
 };

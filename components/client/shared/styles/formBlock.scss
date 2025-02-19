@@ -5,10 +5,18 @@
   grid-template-columns: repeat(2, 1fr) ;
 
   min-height: 50vh;
+
+  @include breakpoint($mobile-bp){
+    display: block;
+  }
 }
 
 .form-block__image{
   background-image: url(/images/diz.jpg);
+
+  @include breakpoint($mobile-bp){
+    display: none;
+  }
 }
 
 .form-block__form{

@@ -5,11 +5,21 @@ import './styles/stickers.scss';
 import {SpecialHeader} from '../index'
 import React from "react";
 
-const GalleryItem = ({header, image, size}: {header?: string, image: string, size: number}) => {
+import Link from 'next/link'
+
+import { useRouter } from "next/navigation";
+
+const GalleryItem = ({header, image, size, link}: {link: string, header?: string, image: string, size: number}) => {
+    const router = useRouter();
+
+    const handleClick = () => {
+        router.push(link); // Переход на страницу /about
+    };
+
     return (
         <div className={`gallery-item size-${size}`} style={{
             backgroundImage: `url(${image})`
-        }}>
+        }} onClick={handleClick}>
             {/*{image && <img src={image} alt="gallery" className="gallery-image" />}*/}
             {header ? <p className="gallery-text">{header}</p> : ''}
 
@@ -20,10 +30,11 @@ const GalleryItem = ({header, image, size}: {header?: string, image: string, siz
 
 interface Props {
     className?: string;
-    galleryData: {image: string, header?: string, size: number}[];
+    galleryData: {image: string, header?: string, size: number, link: string}[];
     subheader: string;
     header: string;
-    mainDescription: string
+    mainDescription: string;
+
 }
 
 export const GalleryData: React.FC<Props> = ({className, galleryData, subheader, header, mainDescription}) => {
@@ -35,7 +46,7 @@ export const GalleryData: React.FC<Props> = ({className, galleryData, subheader,
             <br/>
             <div className="gallery-grid">
                 {galleryData.map((item, index) => (
-                    <GalleryItem key={index} header={item.header} image={item.image} size={item.size}/>
+                    <GalleryItem key={index} header={item.header} image={item.image} size={item.size} link={item.link}/>
                 ))}
             </div>
         </div>
