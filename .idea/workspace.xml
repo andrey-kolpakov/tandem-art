@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cd328da-717d-42ef-989b-7df31b355962" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/components/client/shared/gridComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/gridComponent.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/new.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +90,8 @@
       <workItem from="1739786772443" duration="16884000" />
       <workItem from="1739966641255" duration="26000" />
       <workItem from="1739966758442" duration="14374000" />
-      <workItem from="1739981951232" duration="1843000" />
+      <workItem from="1739981951232" duration="2673000" />
+      <workItem from="1739990033221" duration="1181000" />
     </task>
     <servers />
   </component>

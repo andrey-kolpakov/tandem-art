@@ -94,3 +94,12 @@
   text-decoration: underline;
   font-weight: 700;
 }
+
+
+.gallery-main-description{
+  margin-bottom: 1rem;
+
+  @include breakpoint($mobile-bp){
+    margin-bottom: 0;
+  }
+}

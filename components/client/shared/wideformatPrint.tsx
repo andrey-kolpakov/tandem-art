@@ -22,19 +22,19 @@ export const WideformatPrint: React.FC<Props> = ({className}) => {
             header: "УСЛУГИ ПЛОТТЕРНОЙ РЕЗКИ",
             image: "/images/stickers/1.jpg",
             text: "дублирующие номера, трафареты, отрисовка шаблонов",
-            link: "/plotter-cutting"
+            link: "/wide-format-printing"
         },
         {
             header: "МОНТАЖ И ПЕЧАТЬ",
             image: "/images/stickers/1.jpg",
             text: "roll-up, x-конструкций, pop-up",
-            link: "/installation-and-printing"
+            link: "/wide-format-printing"
         },
         {
             header: "ПЕЧАТЬ ВЫСОКОГО КАЧЕСТВА",
             image: "/images/stickers/1.jpg",
             text: "постеров, модульных картин, плакатов",
-            link: "/high-quality-printing"
+            link: "/wide-format-printing"
         }
     ];
 

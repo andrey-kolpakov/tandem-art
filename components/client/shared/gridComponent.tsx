@@ -75,17 +75,18 @@ export const GridComponent: React.FC<Props> = ({className}) => {
     const [cellSize, setCellSize] = useState({width: 0, height: 0});
 
     useEffect(() => {
-        if (gridRef.current) {
-            const {width, height} = gridRef.current.getBoundingClientRect();
-            setCellSize({width: width / 6, height: height / 3});
-        }
-
         if (isMobile) setDeviceType("mobile");
         else if (isDesktop) setDeviceType("desktop");
     }, []);
 
+    useEffect(() => {
+        if (gridRef.current) {
+            const {width, height} = gridRef.current.getBoundingClientRect();
 
-
+            // console.log(gridRef.current.getBoundingClientRect())
+            setCellSize({width: width / 6, height: height / 3});
+        }
+    }, [deviceType]);
 
 
     return (
@@ -103,8 +104,12 @@ export const GridComponent: React.FC<Props> = ({className}) => {
 
             {   deviceType === 'desktop' ?
                 <div className={clsx("grid-container", className)} ref={gridRef}>
-                    {gridCells.map((cell, index) => (
-                        <div
+                    {gridCells.map((cell, index) => {
+                        // if (cell.type === 'slider'){
+                        //     console.log(gridRef.current)
+                        // }
+
+                        return (<div
                             key={`grid-element__${index}`}
                             className={clsx("grid-item", {
                                 empty: cell.isEmpty,
@@ -124,8 +129,8 @@ export const GridComponent: React.FC<Props> = ({className}) => {
                             ) : (
                                 cell.text
                             )}
-                        </div>
-                    ))}
+                        </div>)
+                    })}
                 </div> :
 
                 <div className={'header-links'}>
