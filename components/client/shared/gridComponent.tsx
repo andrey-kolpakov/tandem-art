@@ -12,6 +12,12 @@ import Image from 'next/image';
 import {isDesktop, isMobile} from "react-device-detect";
 import Link from "next/link";
 
+// import sticker from '@/components/assets/images/icons-home/sticker.svg'
+// import contacts from '@/components/assets/images/icons-home/phone-call.svg'
+// import wideformatprint from '@/components/assets/images/icons-home/plotter.svg'
+// import portfolio from '@/components/assets/images/icons-home/portfolio.svg'
+// import poly from '@/components/assets/images/icons-home/copy.svg'
+
 interface GridItem {
     text?: string;
     link: string;
@@ -19,6 +25,7 @@ interface GridItem {
     order: number;
     items?: string[];
     isEmpty?: boolean;
+    img?: string;
 }
 
 interface Props {
@@ -26,11 +33,11 @@ interface Props {
 }
 
 const gridData: GridItem[] = [
-    {text: "Широкоформатная печать", link: "wideformatprint", type: 'link', order: 2},
-    {text: "Полиграфия", link: "polygraph", type: 'link', order: 12},
-    {text: "Стикеры", link: "stickers", type: 'link', order: 9},
-    {text: "Портфолио", link: "portfolio", type: 'link', order: 8},
-    {text: "Контакты", link: "contacts", type: 'link', order: 17},
+    {text: "Широкоформатная печать", link: "wideformatprint", type: 'link', order: 2, img: '/images/icons-home/plotter.svg'},
+    {text: "Полиграфия", link: "polygraph", type: 'link', order: 12, img: '/images/icons-home/copy.svg'},
+    {text: "Стикеры", link: "stickers", type: 'link', order: 9, img: '/images/icons-home/sticker.svg'},
+    {text: "Портфолио", link: "portfolio", type: 'link', order: 8, img: '/images/icons-home/portfolio.svg'},
+    {text: "Контакты", link: "contacts", type: 'link', order: 17, img: '/images/icons-home/phone-call.svg'},
     {
         link: "#", type: 'slider', items: [
             'images/slider-cards/1/1.jpg', 'images/slider-cards/1/2.jpg', 'images/slider-cards/1/3.jpg', 'images/slider-cards/1/4.jpg'
@@ -127,7 +134,12 @@ export const GridComponent: React.FC<Props> = ({className}) => {
                                     <CardSlider images={cell.items || []} size={cellSize}/>
                                 </div>
                             ) : (
-                                cell.text
+
+                                <div className={'grid-item__info-link'}>
+                                    {cell.img? <Image src={cell.img} alt={'check'} width={70} height={70}/> : ''}
+                                    {cell.text}
+                                </div>
+
                             )}
                         </div>)
                     })}
