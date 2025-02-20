@@ -94,3 +94,11 @@
   color: white;
   font-weight: 700;
 }
+
+.grid-item__info-link{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  justify-content: center;
+  align-items: center;
+}

@@ -26,6 +26,8 @@ export const CardSlider: React.FC<Props> = ({className, images, size}) => {
 
     const delayRandom = Math.floor(Math.random() * 5000) + 5000
 
+    // console.log('123')
+
     return (
         <Swiper
             slidesPerView={1}

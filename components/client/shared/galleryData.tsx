@@ -52,14 +52,13 @@ export const GalleryData: React.FC<Props> = ({className, galleryData, subheader,
     return (
         <div className={className}>
             <SpecialHeader subheader={subheader} header={header}/>
-            <p>{mainDescription}</p>
+            <p className={'gallery-main-description'}>{mainDescription}</p>
 
 
 
             {deviceType === 'desktop' ?
 
                 <div className="gallery-grid">
-                    <br/>
                     {galleryData.map((item, index) => (
                         <GalleryItem key={index} header={item.header} image={item.image} size={item.size} link={item.link}/>
                     ))}
