@@ -25,6 +25,8 @@ import {dbClient} from "@/services/dbClient";
 import * as stickersInfo from '@/data/stickersGallery'
 import * as interiorInfo from '@/data/interiorPrint'
 
+import './page.scss'
+
 export default async function Home() {
     const sliderData: SliderOfBanners = await dbClient.banners.getSliderByTitle('main-home') as SliderOfBanners
     const products: Product[] = await dbClient.products.getProductsAll() as Product[]
@@ -38,11 +40,11 @@ export default async function Home() {
         <div>
             {/*<AdvertSlider images={sliderData.images}/>*/}
 
-            <Container>
+            <Container pd={true} classNameOuter={'container--header-main'}>
                 <GridComponent/>
             </Container>
 
-            <hr/>
+            {/*<hr/>*/}
 
             {/*<Container className={'about-us-block'}>*/}
             {/*    <h1>О нас</h1>*/}
