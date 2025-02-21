@@ -18,5 +18,6 @@ export {GalleryData} from './shared/galleryData'
 export {SpecialHeader} from './shared/specialHeader'
 export {VerticalCard} from './shared/verticalCard'
 export {WideformatPrint} from './shared/wideformatPrint'
+export {WhatsAppButton} from './shared/whatsAppButton'
 
 export {Button} from './ui/button'

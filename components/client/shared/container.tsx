@@ -35,7 +35,8 @@ export const Container = forwardRef<HTMLDivElement, Props>(
                     'container-outer--margin-top-0': mtnone,
                     'container-outer--margin-none' : marginNone
                 })}
-                style={{ backgroundImage: `url(${imageURL ? imageURL.src : ''})` }}
+
+                style = {imageURL && {backgroundImage: `url(${imageURL})`}}
 
                 id={id}
             >
