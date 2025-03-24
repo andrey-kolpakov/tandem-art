@@ -14,36 +14,37 @@ export const WideformatPrint: React.FC<Props> = ({className}) => {
     const cards = [
         {
             header: "ШИРОКОФОРМАТНАЯ ПЕЧАТЬ",
-            image: "/images/stickers/1.jpg",
-            text: "на оракале, баннере, фотобумаге, бэклите, перфорации, холсте",
+            image: "/images/wide-format/4.jpg",
+            text: "высокого качества на всех видах материалов",
             link: "/wide-format-printing"
         },
         {
-            header: "УСЛУГИ ПЛОТТЕРНОЙ РЕЗКИ",
-            image: "/images/stickers/1.jpg",
-            text: "дублирующие номера, трафареты, отрисовка шаблонов",
+            header: "Стикеры, наклейки, этикетки, стикерпаки",
+            image: "/images/wide-format/3.jpg",
+            text: "от одного экземпляра любой формы для любых целей",
             link: "/wide-format-printing"
         },
         {
-            header: "МОНТАЖ И ПЕЧАТЬ",
-            image: "/images/stickers/1.jpg",
-            text: "roll-up, x-конструкций, pop-up",
+            header: "Услуги плоттерной резки",
+            image: "/images/wide-format/2.jpg",
+            text: "высечка наклеек, резка оракала, изготовление трафаретов",
             link: "/wide-format-printing"
         },
         {
-            header: "ПЕЧАТЬ ВЫСОКОГО КАЧЕСТВА",
-            image: "/images/stickers/1.jpg",
-            text: "постеров, модульных картин, плакатов",
+            header: "Мобильные стенды",
+            image: "/images/wide-format/1.jpg",
+            text: "x-конструкции, roll-up",
             link: "/wide-format-printing"
         }
     ];
 
     return (
         <div className={clsx(className, '')}>
-            <SpecialHeader subheader={'Широкоформатная печать'} header={'Достоинства'}/>
-            <p>Широкоформатная печать — это сочетание качества, скорости и универсальности. Современные технологии
-                позволяют создавать яркие и долговечные изображения на различных материалах, будь то баннеры, оракал,
-                фотобумага или холсты. </p>
+            <SpecialHeader header={'Широкоформатная печать'}/>
+            {/*<p>Широкоформатная печать — это сочетание качества, скорости и универсальности. Современные технологии*/}
+            {/*    позволяют создавать яркие и долговечные изображения на различных материалах, будь то баннеры, оракал,*/}
+            {/*    фотобумага или холсты. */}
+            {/*</p>*/}
             <br/>
 
             <div className={'vertical-cards-container'}>

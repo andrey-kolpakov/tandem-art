@@ -14,6 +14,7 @@ import {
     Ford,
     GalleryData,
     WideformatPrint,
+    InteriorPrint,
 
 } from "@/components/client";
 import {SliderOfBanners, Product, Review} from "@/types/types";
@@ -35,14 +36,34 @@ export default async function Home() {
     // console.log(products)
     // console.log(await prisma.product.findMany())
 
+    // console.log(sliderData)
+
+    const sliderElementsList = [
+        {
+            imageUrl: './images/slider-home/1.jpg',
+            header: 'Изготовление стикеров, наклеек, этикеток',
+        },
+        {
+            imageUrl: './images/slider-home/2.jpg',
+            header: 'Широкоформатная печать на всех видах материала',
+        },
+        {
+            imageUrl: './images/slider-home/3.jpg',
+            header: 'Рекламное оборудование',
+        },
+        {
+            imageUrl: './images/slider-home/4.jpg',
+            header: 'Интерьерная печать - фотообои, печать на холсте',
+        },
+    ]
 
     return (
         <div>
-            {/*<AdvertSlider images={sliderData.images}/>*/}
+            <AdvertSlider images={sliderElementsList}/>
 
-            <Container pd={true} classNameOuter={'container--header-main'}>
-                <GridComponent/>
-            </Container>
+            {/*<Container pd={true} classNameOuter={'container--header-main'}>*/}
+            {/*    <GridComponent/>*/}
+            {/*</Container>*/}
 
             {/*<hr/>*/}
 
@@ -94,9 +115,13 @@ export default async function Home() {
             {/*    <Reviews reviewsData={reviews}/>*/}
             {/*</Container>*/}
 
-            <Container pd={true}>
-                <GalleryData galleryData={interiorInfo.galleryData} subheader={interiorInfo.subheader}
-                             header={interiorInfo.header} mainDescription={interiorInfo.text} link={'interior'}/>
+            {/*<Container pd={true}>*/}
+            {/*    <GalleryData galleryData={interiorInfo.galleryData} subheader={interiorInfo.subheader}*/}
+            {/*                 header={interiorInfo.header} mainDescription={interiorInfo.text} link={'interior'}/>*/}
+            {/*</Container>*/}
+
+            <Container pd={true} id={'interiorprint'}>
+                <InteriorPrint/>
             </Container>
 
             <hr/>

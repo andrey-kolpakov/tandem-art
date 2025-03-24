@@ -29,8 +29,8 @@ function MenuJSX({ closePopup }: { closePopup?: () => void }) {
                 <a href="#stickers" onClick={(e) => handleClick(e, "stickers")}>
                     Стикеры
                 </a>
-                <a href="#polygraph" onClick={(e) => handleClick(e, "polygraph")}>
-                    Полиграфия
+                <a href="#interiorprint" onClick={(e) => handleClick(e, "interiorprint")}>
+                    Интерьерная печать
                 </a>
                 <a href="#portfolio" onClick={(e) => handleClick(e, "portfolio")}>
                     Портфолио
