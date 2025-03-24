@@ -1,3 +1,5 @@
+'use client'
+
 //verticalCard.tsx
 import React from 'react';
 import clsx from 'clsx';
@@ -6,6 +8,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import './styles/verticalCard.scss'
+import {usePopupStore} from "@/store/popupStore";
+
+
 
 interface Props {
     className?: string;
@@ -15,10 +20,19 @@ interface Props {
         image: string;
         text: string;
         link: string;
+        popupContent? : React.ReactNode
     }
+
 }
 
 export const VerticalCard: React.FC<Props> = ({className, cardInfo}) => {
+    const {openPopup} = usePopupStore();
+
+    function onClickHandler(e: React.MouseEvent<HTMLAnchorElement>) {
+        e.preventDefault()
+        openPopup(cardInfo.popupContent)
+    }
+
     return (
         <div className={clsx(className, 'vertical-card')}>
             <Image src={cardInfo.image} width={350} height={300} alt={'special-header'} className={'vertical-card__image'}/>
@@ -27,7 +41,7 @@ export const VerticalCard: React.FC<Props> = ({className, cardInfo}) => {
                 <h3>{cardInfo.header}</h3>
                 <p>{cardInfo.text}</p>
 
-                <Link href={cardInfo.link}>узнать больше</Link>
+                {!cardInfo.popupContent ? <Link href={cardInfo.link}>узнать больше</Link> : <Link href={'/'} onClick={e => onClickHandler(e)}>узнать больше</Link>}
             </div>
         </div>
     );

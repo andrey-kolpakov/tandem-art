@@ -1,0 +1,19 @@
+@use 'imports' as *;
+
+.interior-print__popup-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.interior-print__popup-form-text{
+  background-color: $main-color--light;
+  padding: 2rem;
+  color: white;
+  max-width: 40rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  box-sizing: border-box;
+}
