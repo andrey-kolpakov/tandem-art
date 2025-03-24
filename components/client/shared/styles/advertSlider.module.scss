@@ -4,18 +4,19 @@
 
   *{
     color: white;
-
     text-align: center;
   }
 
   h2{
     text-transform: uppercase;
-    font-size: 4rem;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
   }
 }
 
 .swiperSlide{
-  height: 30rem;
+  height: 40rem;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -24,4 +25,12 @@
   gap: 1rem;
   align-items: center;
   justify-content: center;
+}
+
+.header-background{
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: .5rem 0;
+  margin-top: auto;
+
 }

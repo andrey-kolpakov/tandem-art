@@ -27,20 +27,19 @@
     margin-bottom: 1rem;
   }
 
-  &:nth-child(2) {
-    background-color: $main-color--light;
-
+  transition: all .3s ease-in-out;
+  &:hover{
+    background-color: #3a6ca5;
     * {
       color: white;
     }
-
   }
 }
 
 .advantages-item__icon {
   height: 7rem;
   width: 7rem;
-  color: $main-color
+  color: #3a6ca5;
 }
 
 .advantages-header {
