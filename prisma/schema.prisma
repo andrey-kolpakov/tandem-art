@@ -25,6 +25,11 @@ enum UserRole {
   USER
 }
 
+model currentIp {
+  id Int @id @default(autoincrement())
+  ip String
+}
+
 //Sliders
 model SliderOfBanners {
   id    Int    @id @default(autoincrement())

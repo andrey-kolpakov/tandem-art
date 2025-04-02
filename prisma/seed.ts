@@ -228,6 +228,12 @@ async function up() {
         ]
     });
 
+
+    await prisma.currentIp.create({
+        data: {
+            ip: '95.56.127.183'
+        }
+    })
 }
 
 
