@@ -17,7 +17,10 @@ export async function GET(req: NextRequest) {
 }
 
 export async function POST(req: NextRequest){
+
     const data = await req.json()
+    console.log(SECRET_KEY)
+    console.log(data)
 
     const providedSecret = data.secret
     if (providedSecret !== SECRET_KEY) {
