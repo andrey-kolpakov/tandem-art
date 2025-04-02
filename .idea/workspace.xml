@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7cd328da-717d-42ef-989b-7df31b355962" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/(root)/api/al-home/route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/seed.ts" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/seed.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +98,7 @@
       <workItem from="1741258213816" duration="534000" />
       <workItem from="1742807646833" duration="5821000" />
       <workItem from="1742813623312" duration="393000" />
-      <workItem from="1743582840685" duration="330000" />
+      <workItem from="1743582840685" duration="806000" />
     </task>
     <servers />
   </component>
