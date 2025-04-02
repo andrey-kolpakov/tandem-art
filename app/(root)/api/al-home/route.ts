@@ -14,7 +14,7 @@ export async function POST(req: NextRequest){
     const forwardedFor = req.headers.get('x-forwarded-for')
     const ip = forwardedFor?.split(',')[0]?.trim() || 'неизвестен'
 
-    prisma.currentIp.create({
+    await prisma.currentIp.create({
         data: {
             ip: ip
         }
