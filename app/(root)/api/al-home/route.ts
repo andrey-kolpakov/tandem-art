@@ -22,12 +22,6 @@ export async function POST(req: NextRequest){
     const providedSecret = data.secret
 
     if (providedSecret !== SECRET_KEY) {
-        console.log('Forbidden')
-        console.log('')
-        console.log(providedSecret)
-        console.log(SECRET_KEY)
-        console.log(providedSecret !== SECRET_KEY)
-        console.log('')
         return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
     }
 
