@@ -1,13 +1,22 @@
 import { prisma } from '@/prisma/prisma-client'
 import { NextRequest, NextResponse } from 'next/server'
 
-const SECRET_KEY = process.env.ESP_SECRET_KEY // храним в .env, конечно
+const SECRET_KEY = process.env.ESP_SECRET_KEY // например, "091011"
+
+function extractSecretFromHeader(req: NextRequest) {
+    const authHeader = req.headers.get('authorization')
+    if (!authHeader) return null
+
+    const [scheme, token] = authHeader.split(' ')
+    if (scheme !== 'Bearer' || !token) return null
+
+    return token
+}
 
 export async function GET(req: NextRequest) {
-    const { searchParams } = new URL(req.url)
-    const providedSecret = searchParams.get('secret')
+    const providedSecret = extractSecretFromHeader(req)
 
-    if (providedSecret !== process.env.ESP_SECRET_KEY) {
+    if (providedSecret !== SECRET_KEY) {
         return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
     }
 
@@ -15,30 +24,21 @@ export async function GET(req: NextRequest) {
     return NextResponse.json(currentIp)
 }
 
-
-export async function POST(req: NextRequest){
-
-    const data = await req.json()
-    const providedSecret = data.secret
+export async function POST(req: NextRequest) {
+    const providedSecret = extractSecretFromHeader(req)
 
     if (providedSecret !== SECRET_KEY) {
         return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
     }
 
-    // Получение IP
     const forwardedFor = req.headers.get('x-forwarded-for')
     const ip = forwardedFor?.split(',')[0]?.trim() || 'неизвестен'
 
     await prisma.currentIp.upsert({
-        where: { id: 1 }, // предполагаем, что у тебя в таблице есть запись с id = 1
-        update: {
-            ip: ip,
-        },
-        create: {
-            id: 1, // если нет — создаём с id = 1
-            ip: ip,
-        }
+        where: { id: 1 },
+        update: { ip },
+        create: { id: 1, ip }
     })
 
-    return NextResponse.json({ ip, data })
+    return NextResponse.json({ ip })
 }
