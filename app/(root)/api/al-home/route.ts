@@ -4,17 +4,17 @@ import { NextRequest, NextResponse } from 'next/server'
 const SECRET_KEY = process.env.ESP_SECRET_KEY // храним в .env, конечно
 
 export async function GET(req: NextRequest) {
-    const data = await req.json()
+    const { searchParams } = new URL(req.url)
+    const providedSecret = searchParams.get('secret')
 
-    const providedSecret = data.secret
-    if (providedSecret !== SECRET_KEY) {
+    if (providedSecret !== process.env.ESP_SECRET_KEY) {
         return NextResponse.json({ error: 'Forbidden' }, { status: 403 })
     }
 
     const currentIp = await prisma.currentIp.findFirst()
-
     return NextResponse.json(currentIp)
 }
+
 
 export async function POST(req: NextRequest){
 
