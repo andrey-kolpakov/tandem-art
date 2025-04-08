@@ -1,6 +1,8 @@
 // /app/api/al-home/route.ts
 import { NextRequest, NextResponse } from 'next/server'
 
+const OWNER_ID  = process.env.userId
+
 export async function POST(req: NextRequest) {
     const reqBody = await req.json()
 
@@ -9,7 +11,6 @@ export async function POST(req: NextRequest) {
     const session = reqBody.session
 
     const userId = session?.user_id || ''
-    console.log(userId)
 
     let responseText = ''
     let endSession = false
@@ -19,6 +20,10 @@ export async function POST(req: NextRequest) {
     } else if (utterance.includes('включи')) {
         // Здесь логика запроса на твой API включения вентилятора
         responseText = 'Вентилятор включен.'
+
+        if (userId !== OWNER_ID) {
+            responseText = 'Вентилятор включен. Юзер идентифицирован'
+        }
     } else if (utterance.includes('выключи')) {
         // Здесь логика выключения вентилятора
         responseText = 'Вентилятор выключен.'
