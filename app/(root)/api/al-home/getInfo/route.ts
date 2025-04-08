@@ -8,6 +8,9 @@ export async function POST(req: NextRequest) {
     const version = reqBody.version
     const session = reqBody.session
 
+    const userId = session?.user_id || ''
+    console.log(userId)
+
     let responseText = ''
     let endSession = false
 
