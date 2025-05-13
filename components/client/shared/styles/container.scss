@@ -4,6 +4,15 @@
     max-width: $max-width-container;
     margin: 0 auto;
 
+    &--page{
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 2rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+    }
+
     @include breakpoint($mobile-bp){
         max-width: 100%;
         padding: 0rem .3rem;
@@ -14,7 +23,7 @@
 .container-outer {
     background-position: center center;
     background-size: cover;
-    margin: 4rem 0;
+    //margin: 4rem 0;
     box-sizing: border-box;
 
     &--full-screen {
@@ -38,7 +47,7 @@
     }
 
     &--pd{
-        padding: 6rem 0rem;
+        padding: 3rem 0rem;
         //border-top: #3D3D3D solid 1px;
 
         @include breakpoint($mobile-bp){

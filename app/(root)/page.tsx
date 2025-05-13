@@ -15,6 +15,7 @@ import {
     GalleryData,
     WideformatPrint,
     InteriorPrint,
+    StickerCategories
 
 } from "@/components/client";
 import {SliderOfBanners, Product, Review} from "@/types/types";
@@ -95,21 +96,27 @@ export default async function Home() {
                 <Ford/>
             </Container>
 
+
+
             <hr/>
 
             <Container pd={true}>
-                <ImagesGallery images={portfolioImages} header={'Портфолио'}/>
+                <StickerCategories/>
             </Container>
 
-            <hr/>
+            {/*<Container pd={true}>*/}
+            {/*    <ImagesGallery images={portfolioImages} header={'Портфолио'}/>*/}
+            {/*</Container>*/}
+
+            {/*<hr/>*/}
 
 
-            <Container pd={true} id={'stickers'}>
-                <GalleryData galleryData={stickersInfo.galleryData} subheader={stickersInfo.subheader}
-                             header={stickersInfo.header} mainDescription={stickersInfo.text} link={'stickers'}/>
-            </Container>
+            {/*<Container pd={true} id={'stickers'}>*/}
+            {/*    <GalleryData galleryData={stickersInfo.galleryData} subheader={stickersInfo.subheader}*/}
+            {/*                 header={stickersInfo.header} mainDescription={stickersInfo.text} link={'stickers'}/>*/}
+            {/*</Container>*/}
 
-            <hr/>
+            {/*<hr/>*/}
 
             {/*<Container>*/}
             {/*    <Reviews reviewsData={reviews}/>*/}
@@ -120,11 +127,26 @@ export default async function Home() {
             {/*                 header={interiorInfo.header} mainDescription={interiorInfo.text} link={'interior'}/>*/}
             {/*</Container>*/}
 
+            <Container>
+
+                <video
+                    className="canvas-print-video"
+                    src="/images/VID20230519093754.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                />
+
+            </Container>
+
+            {/*<hr/>*/}
+
             <Container pd={true} id={'interiorprint'}>
                 <InteriorPrint/>
             </Container>
 
-            <hr/>
+            {/*<hr/>*/}
 
             <Container pd={true} id={'contacts'}>
                 <FormBlock formBlockOrigin={'Главная страница блок-форма'}/>

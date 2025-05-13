@@ -1,0 +1,42 @@
+.stickers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  padding: 2rem;
+
+  width: 900px;
+  margin: 0 auto;
+}
+
+.sticker-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  color: inherit;
+
+  &:hover .sticker-image {
+    transform: scale(1.1);
+  }
+}
+
+.sticker-image-wrapper {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.sticker-image {
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.sticker-title {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
