@@ -1,0 +1,65 @@
+.custom-gallery {
+  //display: grid;
+  //display: flex;
+  //flex-wrap: wrap;
+  //gap: 1rem;
+  //padding: 2rem;
+  //
+  //// 4 колонки для удобного деления на половины и трети
+  //grid-template-columns: repeat(4, 1fr);
+  //grid-auto-rows: 220px;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  justify-content: space-between;
+  align-content: flex-start;
+
+  .gallery-item {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    text-decoration: none;
+
+    .image {
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    &:hover .image {
+      transform: scale(1.05);
+    }
+  }
+
+  /* Распределение */
+  .item-1 {
+    width: 100%;
+  }
+
+  .item-2 {
+    width: calc(50% - 12px);
+  }
+
+  .item-3 {
+    width: calc(50% - 12px);
+  }
+
+  .item-4 {
+    width: 100%;
+  }
+
+  .item-5 {
+    width: calc(33.3% - 1rem);
+  }
+
+  .item-6 {
+    width: calc(33.3% - 1rem);
+  }
+
+  .item-7 {
+    width: calc(33.3% - 1rem);
+  }
+}

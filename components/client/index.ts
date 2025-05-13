@@ -19,6 +19,8 @@ export {SpecialHeader} from './shared/specialHeader'
 export {VerticalCard} from './shared/verticalCard'
 export {WideformatPrint} from './shared/wideformatPrint'
 export {InteriorPrint} from './shared/interiorPrint'
+export {StickerCategories} from './shared/StickerCategories'
 export {WhatsAppButton} from './shared/whatsAppButton'
+export {Gallery} from './shared/Gallery'
 
 export {Button} from './ui/button'

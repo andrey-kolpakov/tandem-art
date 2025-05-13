@@ -19,12 +19,15 @@ interface Props {
         text: string;
         link: string;
         popupContent?: React.JSX.Element;
+        newTab?: boolean;
     }
 
 }
 
 export const VerticalCard: React.FC<Props> = ({className, cardInfo}) => {
     const {openPopup} = usePopupStore();
+
+    // console.log(cardInfo.newTab)
 
     function onClickHandler(e: React.MouseEvent<HTMLAnchorElement>) {
         e.preventDefault()
@@ -44,7 +47,9 @@ export const VerticalCard: React.FC<Props> = ({className, cardInfo}) => {
                 <p>{cardInfo.text}</p>
 
                 {!cardInfo.popupContent ? <Link href={cardInfo.link}>узнать больше</Link> :
-                    <Link href={'/'} onClick={e => onClickHandler(e)}>узнать больше</Link>}
+                    cardInfo.newTab === false ? <Link href={'/'} onClick={e => onClickHandler(e)}>узнать больше</Link> :
+                    <Link href={cardInfo.link} >узнать больше</Link>
+                }
             </div>
         </div>
     );

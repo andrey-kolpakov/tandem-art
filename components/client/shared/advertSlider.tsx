@@ -13,6 +13,8 @@ import 'swiper/css/bundle'
 import styles from './styles/advertSlider.module.scss'
 import {v4} from 'uuid'
 
+import Image from 'next/image'
+
 import {
     Container,
 } from "@/components/client";
@@ -47,7 +49,8 @@ export const AdvertSlider: React.FC<Props> = ({images}) => {
                         {/*<Container>*/}
 
                         <div className={styles['header-background']} style={{backgroundColor: index % 2 === 0 ? 'rgba(39, 169, 212, 0.9)' : 'rgba(58, 108, 165, 0.9)'}}>
-                            <Container marginNone={true}>
+                            <Container marginNone={true} className={styles['header-background__header']}>
+                                <Image src="/images/menu/stickers.webp" alt="Стикеры" width={36} height={36}/>
                                 <h2>{image.header}</h2>
                             </Container>
                         </div>

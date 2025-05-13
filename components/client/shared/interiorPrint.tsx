@@ -18,28 +18,15 @@ export const InteriorPrint: React.FC<Props> = ({className}) => {
             header: "Печать на холсте",
             image: "/images/interior-print/1.jpg",
             text: "Интерьерная печать фотографий, постеров, репродукций и других изображений на холсте с натяжкой на подрамник",
-            link: "/wide-format-printing",
-            popupContent:
-                <div className={'interior-print__popup-form'}>
-                    <Image src={'/images/interior-print/1.jpg'} width={200} height={200} alt={"Печать на холсте"}/>
-
-                    <div className={'interior-print__popup-form-text'}>
-                        <h2>Печать на холсте</h2>
-                        <p>Интерьерная печать фотографий, постеров, репродукций и других изображений на холсте с
-                            натяжкой на
-                            подрамник</p>
-                        <p>На холсте можно напечатать картину, имитирующую масляную живопись, семейную фотографию,
-                            модульные
-                            картины, постеры, плакаты и афиши.</p>
-                        <Form submitAction={submitForm}/>
-                    </div>
-                </div>
+            link: "/canvas-printing",
+            newTab: true,
         },
         {
             header: "Печать на обоях",
             image: "/images/interior-print/2.jpg",
             text: "Печать на обоях - это возможность сделать интерьер неповторимым, отвечающим именно вашему вкусу.",
-            link: "/wide-format-printing",
+            link: "/background-printing",
+            newTab: false,
             popupContent:
                 <div className={'interior-print__popup-form'}>
                     <Image src={'/images/interior-print/2.jpg'} width={200} height={200} alt={"Печать на холсте"}/>
@@ -60,25 +47,15 @@ export const InteriorPrint: React.FC<Props> = ({className}) => {
             header: "Печать плакатов",
             image: "/images/interior-print/3.jpg",
             text: "Плакаты - один из самых популярных и недорогих рекламных носителей.",
-            link: "/wide-format-printing",
-            popupContent:
-                <div className={'interior-print__popup-form'}>
-                    <Image src={'/images/interior-print/3.jpg'} width={200} height={200} alt={"Печать на холсте"}/>
-
-                    <div className={'interior-print__popup-form-text'}>
-                        <h2>Печать на холсте</h2>
-                        <p>Плакаты — один из самых популярных и недорогих рекламных носителей.</p>
-                        <p><strong>С их помощью можно проинформировать об акции или о появлении новой продукции, анонсировать предстоящее мероприятие, украсить интерьер магазина или офиса.</strong></p>
-                        <p>Мы печатаем постеры и афиши любых форматов — поштучно и большими тиражами!</p>
-                        <Form submitAction={submitForm}/>
-                    </div>
-                </div>
+            link: "/billboard-printing",
+            newTab: true,
         },
         {
             header: "Таблички и стенды",
             image: "/images/interior-print/4.jpg",
             text: "Изготавливаем таблички и стенды различного вида.",
             link: "/wide-format-printing",
+            newTab: false,
             popupContent:
                 <div className={'interior-print__popup-form'}>
                     <Image src={'/images/interior-print/4.jpg'} width={200} height={200} alt={"Печать на холсте"}/>
