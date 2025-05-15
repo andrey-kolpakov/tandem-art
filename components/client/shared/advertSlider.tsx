@@ -40,12 +40,22 @@ export const AdvertSlider: React.FC<Props> = ({images}) => {
                 modules={[
                     Autoplay,
                     // EffectFade
-                ]}>
+                ]}
+                autoplay={{
+                    delay: 3000,
+                    disableOnInteraction: false,
+                }}
+                loop={true}
+
+        >
 
             {images.map((image, index) => {
                 return (
                     <SwiperSlide key={index} style={{backgroundImage: `url(${image.imageUrl})`}}
-                                 className={styles.swiperSlide}>
+                                 className={styles.swiperSlide}
+
+
+                    >
                         {/*<Container>*/}
 
                         <div className={styles['header-background']} style={{backgroundColor: index % 2 === 0 ? 'rgba(39, 169, 212, 0.9)' : 'rgba(58, 108, 165, 0.9)'}}>
