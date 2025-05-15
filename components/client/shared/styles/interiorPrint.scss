@@ -3,6 +3,8 @@
 .interior-print__popup-form{
   display: flex;
   flex-direction: column;
+  //grid-template-rows: 1fr 2fr;
+  //height: 700px;
 }
 
 .interior-print__popup-form-text{

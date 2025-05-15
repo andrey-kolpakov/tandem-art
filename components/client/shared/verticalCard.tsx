@@ -16,7 +16,7 @@ interface Props {
     cardInfo: {
         header: string;
         image: string;
-        text: string;
+        text: string | React.JSX.Element;
         link: string;
         popupContent?: React.JSX.Element;
         newTab?: boolean;
@@ -44,7 +44,7 @@ export const VerticalCard: React.FC<Props> = ({className, cardInfo}) => {
             <div className={'vertical-card__text'}>
 
                 <h3>{cardInfo.header}</h3>
-                <p>{cardInfo.text}</p>
+                {cardInfo.text}
 
                 {!cardInfo.popupContent ? <Link href={cardInfo.link}>узнать больше</Link> :
                     cardInfo.newTab === false ? <Link href={'/'} onClick={e => onClickHandler(e)}>узнать больше</Link> :

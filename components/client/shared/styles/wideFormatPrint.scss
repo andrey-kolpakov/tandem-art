@@ -9,4 +9,24 @@
     grid-template-columns: unset;
     gap: 1rem;
   }
+
+  &--horizontal{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+
+    .vertical-card{
+      display: grid;
+      grid-template-columns: 1.3fr 1.5fr;
+
+      .vertical-card__text {
+        display: flex;
+        flex-direction: column;
+
+        a{
+          margin-top: auto;
+        }
+      }
+    }
+  }
 }
