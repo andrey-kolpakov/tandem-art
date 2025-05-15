@@ -36,10 +36,10 @@ export const WideformatPrint: React.FC<Props> = ({className}) => {
             newTab: false,
             popupContent:
                 <div className={'interior-print__popup-form'}>
-                    <Image src={'/images/plotter.jpg'} width={200} height={200} alt={"Печать на холсте"}/>
+                    <Image src={'/images/plotter.jpg'} width={200} height={250} alt={"Печать на холсте"}/>
 
-                    <div className={'interior-print__popup-form-text'}>
-                        <h2>Плоттерная резка</h2>
+                    <div className={'interior-print__popup-form-text'} style={{fontSize: '14px'}}>
+                        {/*<h2>Плоттерная резка</h2>*/}
                         <p>
                             Плоттерная резка – это современный технологический процесс, который осуществляется с помощью специального оборудования, известного как режущий плоттер. Этот метод позволяет с высокой точностью и аккуратностью вырезать разнообразные материалы, такие как самоклеющаяся пленка и бумага.
                         </p>
@@ -63,10 +63,10 @@ export const WideformatPrint: React.FC<Props> = ({className}) => {
             newTab: false,
             popupContent:
                 <div className={'interior-print__popup-form'}>
-                    <Image src={"/images/x-stand.jpg"} width={200} height={200} alt={"Печать на холсте"}/>
+                    <Image src={"/images/x-stand.jpg"} width={200} height={300} alt={"Печать на холсте"}/>
 
-                    <div className={'interior-print__popup-form-text'}>
-                        <h2>Мобильные стенды</h2>
+                    <div className={'interior-print__popup-form-text'} style={{fontSize: '14px'}}>
+                        {/*<h2>Мобильные стенды</h2>*/}
                         <p>Roll Up (Ролл ап) и Х-конструкция – это мобильные стенды, которые собираются и разбираются за минуту. Незаменимые инструменты рекламы, выставок, оформления входной группы и т.д.
                             Конструкции очень мобильны, они легко перемещаются с точки на точку, замена информации подразумевает лишь печать нового полотна и не сложная замена. Поставляеются в чехле.
                         </p>
