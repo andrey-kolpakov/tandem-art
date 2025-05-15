@@ -8,7 +8,7 @@ import { MdOutlineWhatsapp } from "react-icons/md";
 
 export const WhatsAppButton = ({}) => {
     return (
-        <Link href={'https://wa.me/77017858874'} className={'whatsapp-button'}>
+        <Link href={'https://wa.me/77017858874'} className={'whatsapp-button'} aria-label={'WhatsApp'}>
             <MdOutlineWhatsapp />
         </Link>
     );

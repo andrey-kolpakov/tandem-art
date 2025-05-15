@@ -89,7 +89,7 @@ export function StickerCategories() {
                     <div className="sticker-image-wrapper">
                         <Image
                             src={item.img}
-                            alt={item.title}
+                            alt={`Изображение стикера`}
                             fill
                             sizes="200px"
                             className="sticker-image"

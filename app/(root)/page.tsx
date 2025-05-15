@@ -41,19 +41,19 @@ export default async function Home() {
 
     const sliderElementsList = [
         {
-            imageUrl: './images/slider-home/1.jpg',
+            imageUrl: './images/slider-home/1.webp',
             header: 'Изготовление стикеров, наклеек, этикеток',
         },
         {
-            imageUrl: './images/slider-home/2.jpg',
+            imageUrl: './images/slider-home/2.webp',
             header: 'Широкоформатная печать на всех видах материала',
         },
         {
-            imageUrl: './images/slider-home/3.jpg',
+            imageUrl: './images/slider-home/3.webp',
             header: 'Рекламное оборудование',
         },
         {
-            imageUrl: './images/slider-home/4.jpg',
+            imageUrl: './images/slider-home/4.webp',
             header: 'Интерьерная печать - фотообои, печать на холсте',
         },
     ]

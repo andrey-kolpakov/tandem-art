@@ -12,7 +12,7 @@
 }
 
 .form-block__image{
-  background-image: url(/images/diz.jpg);
+  background-image: url(/images/diz.webp);
 
   @include breakpoint($mobile-bp){
     display: none;
