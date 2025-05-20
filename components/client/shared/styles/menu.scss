@@ -71,3 +71,29 @@ nav {
 .menu-container__icon{
   object-fit: contain;
 }
+
+.menu-containeer__circle-list{
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+  margin-right: 3rem;
+}
+
+.menu-containeer__circle{
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  content: '';
+
+  &--blue{
+    background-color: #15B5EE;
+  }
+
+  &--green{
+    background-color: #34CC66;
+  }
+
+  &--yellow{
+    background-color: #FCCD13;
+  }
+}
