@@ -5,6 +5,8 @@ import clsx from 'clsx';
 import { GoThumbsup } from "react-icons/go";
 import { IoTimeOutline } from "react-icons/io5";
 import { TbPigMoney } from "react-icons/tb";
+import Safe from '@/components/assets/images/safe.svg'
+
 
 import './styles/advantages.scss';
 
@@ -33,7 +35,9 @@ export const Advantages: React.FC<Props> = ({className}) => {
                     <p>Одной проблемой в вашей жизни стало меньше - Вы успеете. Мы все сделаем вовремя и быстро.</p>
                 </div>
                 <div className="advantages-item">
-                    <TbPigMoney className={'advantages-item__icon'}/>
+                    {/*<TbPigMoney className={'advantages-item__icon'}/>*/}
+                    {/*<img src={Safe.src} className={'advantages-item__icon'}/>*/}
+                    <Safe className={'advantages-item__icon'}/>
                     <h3>Доступно</h3>
                     <p>Мы сэкономим Ваше время и увеличим Ваш доход. Цены от производителя - лучше не бывает.</p>
                 </div>

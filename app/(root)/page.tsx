@@ -80,7 +80,7 @@ export default async function Home() {
                 <Advantages/>
             </Container>
 
-            <hr />
+            <hr/>
 
             <Container pd={true} id={'wideformatprint'}>
                 <WideformatPrint/>
@@ -95,7 +95,6 @@ export default async function Home() {
             <Container pd={true}>
                 <Ford/>
             </Container>
-
 
 
             <hr/>
@@ -127,18 +126,18 @@ export default async function Home() {
             {/*                 header={interiorInfo.header} mainDescription={interiorInfo.text} link={'interior'}/>*/}
             {/*</Container>*/}
 
-            <Container>
+            {/*<Container>*/}
 
-                <video
-                    className="canvas-print-video"
-                    src="/images/VID20230519093754.mp4"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                />
+            {/*    <video*/}
+            {/*        className="canvas-print-video"*/}
+            {/*        src="/images/VID20230519093754.mp4"*/}
+            {/*        autoPlay*/}
+            {/*        loop*/}
+            {/*        muted*/}
+            {/*        playsInline*/}
+            {/*    />*/}
 
-            </Container>
+            {/*</Container>*/}
 
             {/*<hr/>*/}
 

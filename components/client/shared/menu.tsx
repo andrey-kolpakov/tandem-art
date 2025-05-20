@@ -23,7 +23,15 @@ function MenuJSX({ closePopup }: { closePopup?: () => void }) {
 
     return (
         <div className="menu-container">
+
+
             <nav>
+                <a className="menu-containeer__circle-list" href={'/'}>
+                    <div className="menu-containeer__circle menu-containeer__circle--blue"></div>
+                    <div className="menu-containeer__circle menu-containeer__circle--green"></div>
+                    <div className="menu-containeer__circle menu-containeer__circle--yellow"></div>
+                </a>
+
                 {/*<a href="/" onClick={() => closePopup && closePopup()}>Главная</a>*/}
                 <a href="#wideformatprint" onClick={(e) => handleClick(e, "wideformatprint")}>
                     <Image src={'/images/menu/wideformat.webp'} width={36} height={24} className={'menu-container__icon'} alt={'icon'}/>

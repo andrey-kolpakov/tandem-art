@@ -32,6 +32,7 @@
     background-color: #3a6ca5;
     * {
       color: white;
+      stroke: white;
     }
   }
 }
@@ -40,6 +41,10 @@
   height: 7rem;
   width: 7rem;
   color: #3a6ca5;
+
+  *{
+    stroke: #3a6ca5;
+  }
 }
 
 .advantages-header {
