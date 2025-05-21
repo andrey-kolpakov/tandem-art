@@ -29,7 +29,7 @@ export const WideformatPrint: React.FC<Props> = ({className}) => {
             newTab: false,
             popupContent:
                 <div className={'interior-print__popup-form'}>
-                    <Image src={'/images/plotter.jpg'} width={200} height={400} alt={"Печать на холсте"}/>
+                    <Image src={'/images/plotter.jpg'} width={200} height={300} alt={"Печать на холсте"}/>
 
                     <div className={'interior-print__popup-form-text'} style={{fontSize: '14px'}}>
                         {/*<h2>Плоттерная резка</h2>*/}
@@ -58,7 +58,7 @@ export const WideformatPrint: React.FC<Props> = ({className}) => {
             newTab: false,
             popupContent:
                 <div className={'interior-print__popup-form'}>
-                    <Image src={"/images/x-stand.jpg"} width={200} height={400} alt={"Печать на холсте"}/>
+                    <Image src={"/images/x-stand.jpg"} width={200} height={300} alt={"Печать на холсте"}/>
 
                     <div className={'interior-print__popup-form-text'} style={{fontSize: '14px'}}>
                         <p>Roll Up (Ролл ап) и Х-конструкция – это мобильные стенды, которые собираются и разбираются за минуту. Незаменимые инструменты рекламы, выставок, оформления входной группы и т.д.
