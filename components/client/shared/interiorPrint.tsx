@@ -30,15 +30,13 @@ export const InteriorPrint: React.FC<Props> = ({className}) => {
                 <p>Основа ПВХ 5-10мм</p>
                 <p>Фотопечать 1440 dpi</p>
                 <p>Крепление и кайма на выбор</p>
-
-
                 <p>и другие</p>
             </div>,
             link: "/wide-format-printing",
             newTab: false,
             popupContent:
                 <div className={'interior-print__popup-form'}>
-                    <Image src={'/images/interior-print/2.jpg'} width={200} height={200} alt={"Печать на холсте"}/>
+                    <Image src={'/images/interior-print/2.jpg'} width={200} height={400} alt={"Печать на холсте"}/>
 
                     <div className={'interior-print__popup-form-text'} >
                         <h2>Таблички и стенды</h2>
@@ -75,7 +73,7 @@ export const InteriorPrint: React.FC<Props> = ({className}) => {
             newTab: false,
             popupContent:
                 <div className={'interior-print__popup-form'}>
-                    <Image src={'/images/interior-print/4.jpg'} width={200} height={300} alt={"Печать на холсте"}/>
+                    <Image src={'/images/interior-print/4.jpg'} width={200} height={400} alt={"Печать на обоях"}/>
 
                     <div className={'interior-print__popup-form-text'}>
                         <h2>Печать на обоях</h2>

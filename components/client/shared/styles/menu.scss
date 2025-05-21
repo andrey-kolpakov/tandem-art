@@ -13,6 +13,14 @@ nav {
     display: flex;
     gap: .5rem;
     align-items: center;
+
+
+    &.active {
+      text-decoration: underline;
+    }
+    &:hover{
+      text-decoration: underline;
+    }
   }
 
   @include breakpoint($mobile-bp) {
@@ -26,8 +34,6 @@ nav {
     a {
       background-color: $main-color;
       padding: 1rem 1rem;
-
-
     }
   }
 }
