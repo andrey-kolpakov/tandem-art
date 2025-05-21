@@ -99,7 +99,7 @@ export default async function Home() {
 
             <hr/>
 
-            <Container pd={true}>
+            <Container pd={true} id={'stickers'}>
                 <StickerCategories/>
             </Container>
 
