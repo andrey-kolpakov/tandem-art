@@ -39,7 +39,7 @@ export const FormBlock: React.FC<Props> = ({className, formBlockOrigin}) => {
         <div className={'form-block'}>
             <div className={'form-block__image'}>
                 <div style={{ width: '100%', height: '100%' }}>
-                    <MapWrapper />
+                    {/*<MapWrapper />*/}
                 </div>
 
             </div>

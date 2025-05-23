@@ -6,6 +6,7 @@ import {scrollToElement} from "@/utils/scrollToElement";
 import "@/components/client/shared/styles/menu.scss";
 import {isDesktop, isMobile} from "react-device-detect";
 import {usePopupStore} from "@/store/popupStore";
+import { useRouter, usePathname } from 'next/navigation';
 
 import {GiHamburgerMenu} from "react-icons/gi";
 
@@ -16,9 +17,20 @@ interface Props {
 }
 
 function MenuJSX({closePopup}: { closePopup?: () => void }) {
+    const pathname = usePathname();
+    const router = useRouter();
+
     const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
-        if (closePopup) closePopup(); // Закрываем попап после клика
-        scrollToElement(e, id);
+        e.preventDefault();
+
+        if (closePopup) closePopup();
+
+        if (pathname !== '/') {
+            // переход на главную с query-параметром
+            router.push(`/#${id}`);
+        } else {
+            scrollToElement(e, id);
+        }
     };
 
     const [activeSection, setActiveSection] = useState<string | null>(null);

@@ -4,13 +4,13 @@ import './page.scss';
 import {Gallery, Container} from '@/components/client/'
 
 const galleryItems = [
-    { src: '/images/wf-page/gallery/1.jpg', alt: 'Стикер 1', href: '/stickers' },
-    { src: '/images/wf-page/gallery/2.jpg', alt: 'Стикер 2', href: '/stickers' },
-    { src: '/images/wf-page/gallery/3.jpg', alt: 'Стикер 3', href: '/stickers' },
-    { src: '/images/wf-page/gallery/4.jpg', alt: 'Стикер 1', href: '/stickers' },
-    { src: '/images/wf-page/gallery/5.jpg', alt: 'Стикер 2', href: '/stickers' },
-    { src: '/images/wf-page/gallery/6.jpg', alt: 'Стикер 3', href: '/stickers' },
-    { src: '/images/wf-page/gallery/7.jpg', alt: 'Стикер 3', href: '/stickers' }
+    { src: '/images/wf-page/gallery/1.webp', alt: 'Стикер 1', href: '/stickers' },
+    { src: '/images/wf-page/gallery/2.webp', alt: 'Стикер 2', href: '/stickers' },
+    { src: '/images/wf-page/gallery/3.webp', alt: 'Стикер 3', href: '/stickers' },
+    { src: '/images/wf-page/gallery/4.webp', alt: 'Стикер 1', href: '/stickers' },
+    { src: '/images/wf-page/gallery/5.webp', alt: 'Стикер 2', href: '/stickers' },
+    { src: '/images/wf-page/gallery/6.webp', alt: 'Стикер 3', href: '/stickers' },
+    { src: '/images/wf-page/gallery/7.webp', alt: 'Стикер 3', href: '/stickers' }
 ]
 
 export default function Page() {

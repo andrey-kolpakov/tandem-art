@@ -33,7 +33,13 @@ interface Props {
 }
 
 const gridData: GridItem[] = [
-    {text: "Широкоформатная печать", link: "wideformatprint", type: 'link', order: 2, img: '/images/icons-home/plotter.svg'},
+    {
+        text: "Широкоформатная печать",
+        link: "wideformatprint",
+        type: 'link',
+        order: 2,
+        img: '/images/icons-home/plotter.svg'
+    },
     {text: "Полиграфия", link: "polygraph", type: 'link', order: 12, img: '/images/icons-home/copy.svg'},
     {text: "Стикеры", link: "stickers", type: 'link', order: 9, img: '/images/icons-home/sticker.svg'},
     {text: "Портфолио", link: "portfolio", type: 'link', order: 8, img: '/images/icons-home/portfolio.svg'},
@@ -109,7 +115,7 @@ export const GridComponent: React.FC<Props> = ({className}) => {
                 </div>
             </div>
 
-            {   deviceType === 'desktop' ?
+            {deviceType === 'desktop' ?
                 <div className={clsx("grid-container", className)} ref={gridRef}>
                     {gridCells.map((cell, index) => {
                         // if (cell.type === 'slider'){
@@ -136,7 +142,7 @@ export const GridComponent: React.FC<Props> = ({className}) => {
                             ) : (
 
                                 <div className={'grid-item__info-link'}>
-                                    {cell.img? <Image src={cell.img} alt={'check'} width={70} height={70}/> : ''}
+                                    {cell.img ? <Image src={cell.img} alt={'check'} width={70} height={70}/> : ''}
                                     {cell.text}
                                 </div>
 

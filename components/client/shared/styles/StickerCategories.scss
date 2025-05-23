@@ -16,6 +16,7 @@
   text-decoration: none;
   transition: transform 0.3s ease;
   color: inherit;
+  cursor: pointer;
 
   &:hover .sticker-image {
     transform: scale(1.1);

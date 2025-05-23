@@ -4,16 +4,18 @@ import './page.scss';
 import {Gallery, Container} from '@/components/client/'
 
 const galleryItems = [
-    { src: '/images/billboard-printing/1.jpg', alt: 'Стикер 1', href: '/stickers' },
-    { src: '/images/billboard-printing/2.jpg', alt: 'Стикер 2', href: '/stickers' },
-    { src: '/images/billboard-printing/3.jpg', alt: 'Стикер 3', href: '/stickers' },
-    { src: '/images/billboard-printing/4.jpg', alt: 'Стикер 1', href: '/stickers' },
-    { src: '/images/billboard-printing/5.jpg', alt: 'Стикер 2', href: '/stickers' },
-    { src: '/images/billboard-printing/6.jpg', alt: 'Стикер 3', href: '/stickers' },
-    { src: '/images/billboard-printing/7.jpg', alt: 'Стикер 3', href: '/stickers' }
+    { src: '/images/billboard-printing/1.webp', alt: 'Стикер 1', href: '/stickers' },
+    { src: '/images/billboard-printing/2.webp', alt: 'Стикер 2', href: '/stickers' },
+    { src: '/images/billboard-printing/3.webp', alt: 'Стикер 3', href: '/stickers' },
+    { src: '/images/billboard-printing/4.webp', alt: 'Стикер 1', href: '/stickers' },
+    { src: '/images/billboard-printing/5.webp', alt: 'Стикер 2', href: '/stickers' },
+    { src: '/images/billboard-printing/6.webp', alt: 'Стикер 3', href: '/stickers' },
+    { src: '/images/billboard-printing/7.webp', alt: 'Стикер 3', href: '/stickers' }
 ]
 
 export default function Page() {
+    // console.log(galleryItems)
+
     return (
         <Container className={'container--page'}>
             <Gallery items={galleryItems} />
