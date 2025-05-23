@@ -15,12 +15,9 @@ interface Props {
     formBlockOrigin: string
 }
 
-const MapWrapper = memo(
-    () => {
-        return <div id="map-container" style={{ width: '100%', height: '100%' }}></div>;
-    },
-    () => true,
-);
+const MapWrapper = memo(function MapWrapper() {
+    return <div id="map-container" style={{ width: '100%', height: '100%' }} />;
+});
 
 export const FormBlock: React.FC<Props> = ({className, formBlockOrigin}) => {
 
