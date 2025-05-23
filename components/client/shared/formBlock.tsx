@@ -25,7 +25,7 @@ const MapWrapper = memo(
 export const FormBlock: React.FC<Props> = ({className, formBlockOrigin}) => {
 
     useEffect(() => {
-        let map;
+        let map: any;
         load().then((mapglAPI) => {
             map = new mapglAPI.Map('map-container', {
                 center: [55.31878, 25.23584],
