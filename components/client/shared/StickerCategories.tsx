@@ -75,9 +75,7 @@ const Component = () => {
 export function StickerCategories() {
     const {openPopup} = usePopupStore();
 
-    function onClickHandler(e: React.MouseEvent<HTMLAnchorElement>) {
-        e.preventDefault()
-
+    function onClickHandler() {
         openPopup(<Component/>)
     }
 
@@ -89,7 +87,7 @@ export function StickerCategories() {
             }}>Изготовление стикеров</h2>
             <div className="stickers-grid">
                 {categories.map((item, index) => (
-                    <div key={index} className="sticker-card" onClick={e => onClickHandler(e)}>
+                    <div key={index} className="sticker-card" onClick={e => onClickHandler()}>
                         <div className="sticker-image-wrapper">
                             <img
                                 src={item.img}
