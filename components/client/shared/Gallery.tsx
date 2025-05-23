@@ -23,12 +23,10 @@ export function Gallery({ items }: GalleryProps) {
                     key={idx}
                     className={`gallery-item item-${idx + 1}`}
                 >
-                    <Image
+                    <img
                         src={item.src}
                         alt={item.alt || ''}
-                        fill
                         className="image"
-                        sizes="(max-width: 768px) 100vw, 300px"
                     />
                 </div>
             ))}

@@ -4,13 +4,13 @@ import './page.scss';
 import {Gallery, Container} from '@/components/client/'
 
 const galleryItems = [
-    { src: '/images/sticker-pack/1.jpeg', alt: 'Стикер 1', href: '/stickers' },
-    { src: '/images/sticker-pack/2.jpg', alt: 'Стикер 2', href: '/stickers' },
-    { src: '/images/sticker-pack/3.jpg', alt: 'Стикер 3', href: '/stickers' },
-    { src: '/images/sticker-pack/4.jpg', alt: 'Стикер 1', href: '/stickers' },
-    { src: '/images/sticker-pack/5.jpg', alt: 'Стикер 2', href: '/stickers' },
-    { src: '/images/sticker-pack/6.jpg', alt: 'Стикер 3', href: '/stickers' },
-    { src: '/images/sticker-pack/7.jpg', alt: 'Стикер 3', href: '/stickers' }
+    { src: '/images/sticker-pack/1.webp', alt: 'Стикер 1', href: '/stickers' },
+    { src: '/images/sticker-pack/2.webp', alt: 'Стикер 2', href: '/stickers' },
+    { src: '/images/sticker-pack/3.webp', alt: 'Стикер 3', href: '/stickers' },
+    { src: '/images/sticker-pack/4.webp', alt: 'Стикер 1', href: '/stickers' },
+    { src: '/images/sticker-pack/5.webp', alt: 'Стикер 2', href: '/stickers' },
+    { src: '/images/sticker-pack/6.webp', alt: 'Стикер 3', href: '/stickers' },
+    { src: '/images/sticker-pack/7.webp', alt: 'Стикер 3', href: '/stickers' }
 ]
 
 export default function Page() {

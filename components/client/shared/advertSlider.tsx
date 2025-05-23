@@ -36,7 +36,7 @@ export const AdvertSlider: React.FC<Props> = ({images}) => {
 
 
         <Swiper className={styles.swiperAvdertSlider}
-                // effect={'fade'}
+            // effect={'fade'}
                 modules={[
                     Autoplay,
                     // EffectFade
@@ -53,21 +53,15 @@ export const AdvertSlider: React.FC<Props> = ({images}) => {
                 return (
                     <SwiperSlide key={index} style={{backgroundImage: `url(${image.imageUrl})`}}
                                  className={styles.swiperSlide}
-
-
                     >
-                        {/*<Container>*/}
 
-                        <div className={styles['header-background']} style={{backgroundColor: index % 2 === 0 ? 'rgba(39, 169, 212, 0.9)' : 'rgba(58, 108, 165, 0.9)'}}>
+                        <div className={styles['header-background']}
+                             style={{backgroundColor: index % 2 === 0 ? 'rgba(39, 169, 212, 0.9)' : 'rgba(58, 108, 165, 0.9)'}}>
                             <Container marginNone={true} className={styles['header-background__header']}>
                                 <Image src="/images/menu/stickers.webp" alt="Стикеры" width={36} height={36}/>
                                 <h2>{image.header}</h2>
                             </Container>
                         </div>
-                        {/*<p>{image.subHeaderText}</p>*/}
-
-                        {/*<Button href={image.buttonUrl}>{image.buttonText}</Button>*/}
-                        {/*</Container>*/}
 
 
                     </SwiperSlide>)

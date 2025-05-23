@@ -16,20 +16,20 @@ export const WideformatPrint: React.FC<Props> = ({className}) => {
     const cards = [
         {
             header: "ШИРОКОФОРМАТНАЯ ПЕЧАТЬ",
-            image: "/images/wide-format/4.jpg",
+            image: "/images/wide-format/4.webp",
             text: "высокого качества на всех видах материалов",
             link: "/wide-format-printing",
             newTab: true,
         },
         {
             header: "Услуги плоттерной резки",
-            image: "/images/plotter.jpg",
+            image: "/images/wide-format/2.webp",
             text: "высечка наклеек, резка оракала, изготовление трафаретов",
             link: "/wide-format-printing",
             newTab: false,
             popupContent:
                 <div className={'interior-print__popup-form'}>
-                    <Image src={'/images/plotter.jpg'} width={200} height={300} alt={"Печать на холсте"}/>
+                    <Image src={'/images/wide-format/2.webp'} width={200} height={300} alt={"Печать на холсте"}/>
 
                     <div className={'interior-print__popup-form-text'} style={{fontSize: '14px'}}>
                         {/*<h2>Плоттерная резка</h2>*/}
@@ -44,7 +44,7 @@ export const WideformatPrint: React.FC<Props> = ({className}) => {
         },
         {
             header: "Стикерпаки",
-            image: "/images/wide-format/3.jpg",
+            image: "/images/wide-format/3.webp",
             text: "от 1 экземпляра любой формы для любых целей",
             link: "/sticker-pack",
             newTab: true,
@@ -52,13 +52,13 @@ export const WideformatPrint: React.FC<Props> = ({className}) => {
 
         {
             header: "Мобильные стенды",
-            image: "/images/x-stand.jpg",
+            image: "/images/wide-format/1.webp",
             text: "x-конструкции, roll-up",
             link: "/wide-format-printing",
             newTab: false,
             popupContent:
                 <div className={'interior-print__popup-form'}>
-                    <Image src={"/images/x-stand.jpg"} width={200} height={300} alt={"Печать на холсте"}/>
+                    <Image src={"/images/images/wide-format/1.webp"} width={200} height={300} alt={"Печать на холсте"}/>
 
                     <div className={'interior-print__popup-form-text'} style={{fontSize: '14px'}}>
                         <p>Roll Up (Ролл ап) и Х-конструкция – это мобильные стенды, которые собираются и разбираются за минуту. Незаменимые инструменты рекламы, выставок, оформления входной группы и т.д.

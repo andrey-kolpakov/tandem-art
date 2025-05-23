@@ -16,7 +16,7 @@ export const InteriorPrint: React.FC<Props> = ({className}) => {
     const cards = [
         {
             header: "Печать на холсте",
-            image: "/images/interior-print/1.jpg",
+            image: "/images/interior-print/1.webp",
             text: <div>
                 <p>Интерьерная печать фотографий, репродукций на холсте, с натяжкой на подрамник</p>
             </div>,
@@ -25,7 +25,7 @@ export const InteriorPrint: React.FC<Props> = ({className}) => {
         },
         {
             header: "Таблички, стенды и указатели",
-            image: "/images/interior-print/2.jpg",
+            image: "/images/interior-print/2.webp",
             text: <div>
                 <p>Основа ПВХ 5-10мм</p>
                 <p>Фотопечать 1440 dpi</p>
@@ -36,7 +36,7 @@ export const InteriorPrint: React.FC<Props> = ({className}) => {
             newTab: false,
             popupContent:
                 <div className={'interior-print__popup-form'}>
-                    <Image src={'/images/interior-print/2.jpg'} width={200} height={300} alt={"Печать на холсте"}/>
+                    <Image src={'/images/interior-print/2.webp'} width={200} height={300} alt={"Печать на холсте"}/>
 
                     <div className={'interior-print__popup-form-text'} >
                         <h2>Таблички и стенды</h2>
@@ -56,7 +56,7 @@ export const InteriorPrint: React.FC<Props> = ({className}) => {
         },
         {
             header: "Постеры, плакаты и афиши",
-            image: "/images/interior-print/3.jpg",
+            image: "/images/interior-print/3.webp",
             text: <div>
                 <p>Плакаты — один из самых популярных и недорогих рекламных носителей.</p>
             </div>,
@@ -65,7 +65,7 @@ export const InteriorPrint: React.FC<Props> = ({className}) => {
         },
         {
             header: "Фотопечать на обоях",
-            image: "/images/interior-print/4.jpg",
+            image: "/images/interior-print/4.webp",
             text: <div>
                 <p>Печать на обоях — это возможность сделать интерьер неповторимым, отвечающий именно вашему вкусу.</p>
             </div>,
@@ -73,7 +73,7 @@ export const InteriorPrint: React.FC<Props> = ({className}) => {
             newTab: false,
             popupContent:
                 <div className={'interior-print__popup-form'}>
-                    <Image src={'/images/interior-print/4.jpg'} width={200} height={300} alt={"Печать на обоях"}/>
+                    <Image src={'/images/interior-print/4.webp'} width={200} height={300} alt={"Печать на обоях"}/>
 
                     <div className={'interior-print__popup-form-text'}>
                         <h2>Печать на обоях</h2>
