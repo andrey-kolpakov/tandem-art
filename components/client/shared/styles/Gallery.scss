@@ -1,3 +1,5 @@
+@use 'imports' as *;
+
 .custom-gallery {
   //display: grid;
   //display: flex;
@@ -37,7 +39,7 @@
   /* Распределение */
   .item-1 {
     width: 100%;
-    height: 30rem;
+    height: 15rem;
   }
 
   .item-2 {
@@ -50,7 +52,7 @@
 
   .item-4 {
     width: 100%;
-    height: 30rem;
+    height: 15rem;
   }
 
   .item-5 {
@@ -76,5 +78,9 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  @include breakpoint($mobile-bp) {
+    height: 15rem;
   }
 }

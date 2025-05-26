@@ -28,12 +28,15 @@ nav {
     gap: 1rem;
 
     * {
-      text-align: center;
+      text-align: left;
     }
 
     a {
       background-color: $main-color;
       padding: 1rem 1rem;
+
+      display: grid;
+      grid-template-columns: 1fr 5fr;
     }
   }
 }
@@ -76,6 +79,12 @@ nav {
 
 .menu-container__icon{
   object-fit: contain;
+
+  @include breakpoint($mobile-bp) {
+    height: 2rem;
+    width: auto;
+    object-fit: contain !important;
+  }
 }
 
 .menu-containeer__circle-list{
@@ -83,6 +92,10 @@ nav {
   align-items: center;
   gap: .3rem;
   margin-right: 3rem;
+
+  @include breakpoint($mobile-bp) {
+    margin-right: unset;
+  }
 }
 
 .menu-containeer__circle{

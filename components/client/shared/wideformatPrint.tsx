@@ -31,7 +31,7 @@ export const WideformatPrint: React.FC<Props> = ({className}) => {
                 <div className={'interior-print__popup-form'}>
                     <Image src={'/images/wide-format/2.webp'} width={200} height={300} alt={"Печать на холсте"}/>
 
-                    <div className={'interior-print__popup-form-text'} style={{fontSize: '14px'}}>
+                    <div className={'interior-print__popup-form-text'} >
                         {/*<h2>Плоттерная резка</h2>*/}
                         <p>Плоттерная резка – это современный технологический процесс, который осуществляется с помощью специального оборудования, известного как режущий плоттер. Этот метод позволяет с высокой точностью и аккуратностью вырезать разнообразные материалы, такие как самоклеющаяся пленка и бумага. </p>
                         <p>Благодаря этому, плоттерная резка нашла широкое применение в различных сферах, включая производство рекламных материалов, оформление интерьеров, создание наклеек и графических элементов.</p>
@@ -60,7 +60,7 @@ export const WideformatPrint: React.FC<Props> = ({className}) => {
                 <div className={'interior-print__popup-form'}>
                     <Image src={"/images/images/wide-format/1.webp"} width={200} height={300} alt={"Печать на холсте"}/>
 
-                    <div className={'interior-print__popup-form-text'} style={{fontSize: '14px'}}>
+                    <div className={'interior-print__popup-form-text'} >
                         <p>Roll Up (Ролл ап) и Х-конструкция – это мобильные стенды, которые собираются и разбираются за минуту. Незаменимые инструменты рекламы, выставок, оформления входной группы и т.д.
                             Конструкции очень мобильны, они легко перемещаются с точки на точку, замена информации подразумевает лишь печать нового полотна и не сложная замена. Поставляеются в чехле.
                         </p>
