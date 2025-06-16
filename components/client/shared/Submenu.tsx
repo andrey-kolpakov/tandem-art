@@ -32,16 +32,16 @@ export const Submenu: React.FC<Props> = ({className}) => {
         <Container className="submenu-container" classNameOuter="submenu-container-outer">
             <Logo width={70} height={50} alt="special-header"/>
 
-            <div className="submenu-address">
-                <MdLocationPin/>
+            <Link href={'https://go.2gis.com/izaO1'} className="submenu-address">
+                <MdLocationPin size={25}/>
                 г. Алматы, ул. Мустафы Озтюрка 11а, офис 1
-            </div>
+            </Link>
 
             <div className="submenu-icons">
                 <Link href="https://wa.me/77017858874" target="_blank" className="submenu-icons__whatsApp">
                     <FaWhatsapp size={25}/>
                 </Link>
-                <Link href="https://t.me/tandemart_kz" target="_blank" className="submenu-icons__telegram">
+                <Link href="https://t.me/Tandem_art" target="_blank" className="submenu-icons__telegram">
                     <PiTelegramLogo size={25}/>
                 </Link>
                 <Link href="https://instagram.com/tandemart_kz" target="_blank" className="submenu-icons__instagram">
