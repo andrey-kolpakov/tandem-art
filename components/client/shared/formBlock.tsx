@@ -26,7 +26,7 @@ export const FormBlock: React.FC<Props> = ({className, formBlockOrigin}) => {
     }, [])
 
     return (
-        <div className="form-block">
+        <div className="form-block" id={'formBlock'}>
             <div className="form-block__image">
                 <div
                     id="yandex-map-container"

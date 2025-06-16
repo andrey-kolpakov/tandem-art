@@ -25,13 +25,12 @@ function MenuJSX({closePopup}: { closePopup?: () => void }) {
     const pathname = usePathname();
     const router = useRouter();
 
-    const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    const handleClick = (e: React.MouseEvent<HTMLElement>, id: string) => {
         e.preventDefault();
 
         if (closePopup) closePopup();
 
         if (pathname !== '/') {
-            // переход на главную с query-параметром
             router.push(`/#${id}`);
         } else {
             scrollToElement(e, id);
@@ -68,7 +67,7 @@ function MenuJSX({closePopup}: { closePopup?: () => void }) {
 
     return (
         <div className="menu-container">
-            <Submenu/>
+            <Submenu handleClick={(e) => handleClick(e, 'formBlock')} />
 
             <Container classNameOuter={'container-outer-nav'}>
                 <nav>
@@ -85,7 +84,7 @@ function MenuJSX({closePopup}: { closePopup?: () => void }) {
                         href="/"
                         data-section="home"
                     >
-                        <HiOutlineMenu width={36} height={24} className={'menu-container__icon'} />
+                        <HiOutlineMenu width={36} height={24} className={'menu-container__icon'}/>
                         Главная
                     </a>
 

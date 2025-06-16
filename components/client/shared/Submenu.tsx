@@ -11,9 +11,10 @@ import Link from 'next/link';
 
 interface Props {
     className?: string;
+    handleClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
-export const Submenu: React.FC<Props> = ({className}) => {
+export const Submenu: React.FC<Props> = ({className, handleClick}) => {
     const [isPopupVisible, setPopupVisible] = useState(false);
     const timeoutRef = useRef<NodeJS.Timeout | null>(null);
 
@@ -63,7 +64,9 @@ export const Submenu: React.FC<Props> = ({className}) => {
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
                     >
-                        <button className="popup-button">Позвонить</button>
+                        <button className="popup-button" onClick={handleClick}>
+                            Позвонить
+                        </button>
                         <div className="popup-numbers">
                             <a href="tel:+77272750507" >+7 (727) 275-05-07</a>
                             <a href="tel:+77272740278" >+7 (727) 274-02-78</a>
