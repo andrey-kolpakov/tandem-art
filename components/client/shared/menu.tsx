@@ -7,6 +7,7 @@ import "@/components/client/shared/styles/menu.scss";
 import {isDesktop, isMobile} from "react-device-detect";
 import {usePopupStore} from "@/store/popupStore";
 import {useRouter, usePathname} from 'next/navigation';
+import {HiOutlineMenu} from "react-icons/hi";
 
 import {GiHamburgerMenu} from "react-icons/gi";
 
@@ -24,13 +25,12 @@ function MenuJSX({closePopup}: { closePopup?: () => void }) {
     const pathname = usePathname();
     const router = useRouter();
 
-    const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    const handleClick = (e: React.MouseEvent<HTMLElement>, id: string) => {
         e.preventDefault();
 
         if (closePopup) closePopup();
 
         if (pathname !== '/') {
-            // переход на главную с query-параметром
             router.push(`/#${id}`);
         } else {
             scrollToElement(e, id);
@@ -67,14 +67,25 @@ function MenuJSX({closePopup}: { closePopup?: () => void }) {
 
     return (
         <div className="menu-container">
-            <Submenu/>
+            <Submenu handleClick={(e) => handleClick(e, 'formBlock')} />
 
             <Container classNameOuter={'container-outer-nav'}>
                 <nav>
-                    <a className="menu-containeer__circle-list" href={'/'}>
-                        <div className="menu-containeer__circle menu-containeer__circle--blue"></div>
-                        <div className="menu-containeer__circle menu-containeer__circle--green"></div>
-                        <div className="menu-containeer__circle menu-containeer__circle--yellow"></div>
+                    {/*<a className="menu-containeer__circle-list" href={'/'}>*/}
+                    {/*    <div className="menu-containeer__circle menu-containeer__circle--blue"></div>*/}
+                    {/*    <div className="menu-containeer__circle menu-containeer__circle--green"></div>*/}
+                    {/*    <div className="menu-containeer__circle menu-containeer__circle--yellow"></div>*/}
+                    {/*</a>*/}
+
+                    <a
+                        className={clsx({
+                            'active': pathname === '/' && activeSection === null
+                        })}
+                        href="/"
+                        data-section="home"
+                    >
+                        <HiOutlineMenu width={36} height={24} className={'menu-container__icon'}/>
+                        Главная
                     </a>
 
                     {/*<a href="/" onClick={() => closePopup && closePopup()}>Главная</a>*/}

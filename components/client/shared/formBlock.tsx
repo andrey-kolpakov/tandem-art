@@ -1,51 +1,42 @@
 'use client'
 
-//formBlock.tsx
-import React, {useEffect, memo} from 'react';
-
+import React, {useEffect, memo} from 'react'
 import {Form} from '../index'
-import {submitForm} from "@/actions/index";
-
+import {submitForm} from '@/actions/index'
 import './styles/formBlock.scss'
-
-import { load } from '@2gis/mapgl';
 
 interface Props {
     className?: string;
     formBlockOrigin: string
 }
 
-const MapWrapper = memo(function MapWrapper() {
-    return <div id="map-container" style={{ width: '100%', height: '100%' }} />;
-});
-
 export const FormBlock: React.FC<Props> = ({className, formBlockOrigin}) => {
-
     useEffect(() => {
-        let map: any;
-        load().then((mapglAPI) => {
-            map = new mapglAPI.Map('map-container', {
-                center: [55.31878, 25.23584],
-                zoom: 13,
-                key: 'Your API access key',
-            });
-        });
+        const script = document.createElement('script')
+        script.src =
+            'https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0dbf110f322557ea4f38273ef26c342616afea59e0e332c1d3a6763a0f43bc93&width=100%25&height=100%25&lang=ru_RU&scroll=true'
+        script.async = true
+        script.charset = 'utf-8'
 
-        // Удаляем карту при размонтировании компонента
-        return () => map && map.destroy();
-    }, []);
+        const mapContainer = document.getElementById('yandex-map-container')
+        if (mapContainer) {
+            mapContainer.innerHTML = ''
+            mapContainer.appendChild(script)
+        }
+    }, [])
 
     return (
-        <div className={'form-block'}>
-            <div className={'form-block__image'}>
-                <div style={{ width: '100%', height: '100%' }}>
-                    {/*<MapWrapper />*/}
-                </div>
-
+        <div className="form-block" id={'formBlock'}>
+            <div className="form-block__image">
+                <div
+                    id="yandex-map-container"
+                    style={{ width: '100%', height: '100%' }}
+                ></div>
             </div>
-            <div className={'form-block__form'}>
+            <div className="form-block__form">
                 <h2>Ответим на ваши вопросы</h2>
-                <Form submitAction={submitForm} formOrigin={formBlockOrigin}/></div>
+                <Form submitAction={submitForm} formOrigin={formBlockOrigin} />
+            </div>
         </div>
-    );
-};
+    )
+}

@@ -18,7 +18,7 @@ export const SocialButtonsColumn = () => {
                 <MdOutlineWhatsapp />
             </Link>
             <Link
-                href="https://t.me/tandemart_kz"
+                href="https://t.me/Tandem_art"
                 className="social-button telegram"
                 aria-label="Telegram"
                 target="_blank"
