@@ -3,6 +3,10 @@
 .submenu-container-outer{
   padding: 1rem 0;
   background-color: white;
+
+  @include breakpoint($mobile-bp){
+    display: none;
+  }
 }
 
 .submenu-container{
