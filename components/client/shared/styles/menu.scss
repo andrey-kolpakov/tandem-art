@@ -9,6 +9,12 @@ nav {
   //justify-content: flex-start;
   padding: .5rem 0;
 
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+
+
+
   a{
     display: flex;
     gap: .5rem;
@@ -28,12 +34,15 @@ nav {
     gap: 1rem;
 
     * {
-      text-align: center;
+      text-align: left;
     }
 
     a {
       background-color: $main-color;
       padding: 1rem 1rem;
+
+      display: grid;
+      grid-template-columns: 1fr 5fr;
     }
   }
 }
@@ -43,10 +52,6 @@ nav {
   top: 0;
   z-index: 9999;
   width: 100%;
-  background-color: $main-color;
-
-  display: flex;
-  justify-content: center;
 
   @include breakpoint($mobile-bp) {
     position: unset;
@@ -76,6 +81,12 @@ nav {
 
 .menu-container__icon{
   object-fit: contain;
+
+  @include breakpoint($mobile-bp) {
+    height: 2rem;
+    width: auto;
+    object-fit: contain !important;
+  }
 }
 
 .menu-containeer__circle-list{
@@ -83,6 +94,10 @@ nav {
   align-items: center;
   gap: .3rem;
   margin-right: 3rem;
+
+  @include breakpoint($mobile-bp) {
+    margin-right: unset;
+  }
 }
 
 .menu-containeer__circle{
@@ -102,4 +117,8 @@ nav {
   &--yellow{
     background-color: #FCCD13;
   }
+}
+
+.container-outer-nav{
+  background-color: $main-color;
 }

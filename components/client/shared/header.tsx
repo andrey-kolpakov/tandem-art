@@ -9,6 +9,8 @@ import {Menu, Container} from '../index'
 import {IoLocationOutline} from "react-icons/io5";
 import {MdAccessTime, MdOutlineLocalPhone} from "react-icons/md";
 
+import {Submenu} from './Submenu';
+
 import '@/components/client/shared/styles/header.scss'
 
 interface Props {
@@ -55,6 +57,8 @@ export const Header: React.FC<Props> = ({className}) => {
 
 
             {/*</Container>*/}
+
+
             <Menu/>
          </>
     );

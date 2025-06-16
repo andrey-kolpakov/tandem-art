@@ -15,6 +15,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;andrey-kolpakov&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/andrey-kolpakov/tandem-art.git&quot;,
+    &quot;accountId&quot;: &quot;f3aae36d-b690-4cdd-aece-c59851fa3531&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -130,6 +142,12 @@
       <workItem from="1747372431223" duration="600000" />
       <workItem from="1747739765800" duration="13016000" />
       <workItem from="1747977158702" duration="760000" />
+      <workItem from="1748001831597" duration="6364000" />
+      <workItem from="1748244989724" duration="2030000" />
+      <workItem from="1748325857751" duration="593000" />
+      <workItem from="1748334342464" duration="20000" />
+      <workItem from="1748599911421" duration="276000" />
+      <workItem from="1750061475352" duration="3145000" />
     </task>
     <servers />
   </component>

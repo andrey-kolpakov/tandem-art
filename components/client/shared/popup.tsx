@@ -9,6 +9,8 @@ function Popup() {
 
     // Закрытие по клику на фон
     const handleBackdropClick = () => {
+        console.log('123')
+
         if (!currentPopup) return
         closePopup()
     }

@@ -3,7 +3,7 @@ import {Inter} from 'next/font/google'
 import { Roboto_Condensed } from 'next/font/google';
 import '../globals.scss'
 
-import {Header, Popup, Footer, WhatsAppButton} from '@/components/client'
+import {Header, Popup, Footer, SocialButtonsColumn} from '@/components/client'
 
 const inter = Inter({
     subsets: ['latin'],
@@ -35,7 +35,8 @@ export default function RootLayout({
 
         {children}
 
-        <WhatsAppButton/>
+
+        <SocialButtonsColumn/>
         <Footer />
         </body>
         </html>

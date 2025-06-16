@@ -8,6 +8,8 @@
 
   @include breakpoint($mobile-bp){
     display: block;
+    min-height: unset;
+    padding-bottom: 2rem;
   }
 }
 
