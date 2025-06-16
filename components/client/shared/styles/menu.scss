@@ -9,6 +9,12 @@ nav {
   //justify-content: flex-start;
   padding: .5rem 0;
 
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+
+
+
   a{
     display: flex;
     gap: .5rem;
@@ -46,10 +52,6 @@ nav {
   top: 0;
   z-index: 9999;
   width: 100%;
-  background-color: $main-color;
-
-  display: flex;
-  justify-content: center;
 
   @include breakpoint($mobile-bp) {
     position: unset;
@@ -115,4 +117,8 @@ nav {
   &--yellow{
     background-color: #FCCD13;
   }
+}
+
+.container-outer-nav{
+  background-color: $main-color;
 }

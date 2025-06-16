@@ -1,0 +1,44 @@
+// styles/socialButtonsColumn.scss
+
+.social-buttons-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+
+  .social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+
+    transition: transform 0.2s ease, opacity 0.2s ease;
+
+    &.whatsapp {
+      background-color: #25D366;
+    }
+
+    &.telegram {
+      background-color: #0088cc;
+    }
+
+    &.instagram {
+      background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf, #4f5bd5);
+    }
+
+    &:hover {
+      transform: scale(1.1);
+      opacity: 0.9;
+    }
+  }
+}
