@@ -74,9 +74,9 @@ export const Footer: React.FC = ({}) => {
                                 <div>
                                     <h4>Телефон:</h4>
 
-                                    <a href="tel:+77017858874" className={'tp-thin'}>+7 (701) 785 8874</a>
-                                    <a href="tel:+77272740278" className={'tp-thin'}>274 02 78</a>
-                                    <a href="tel:+77272750507" className={'tp-thin'}>275 05 07</a>
+                                    <a href="tel:+77017858874" className={'tp-thin'}>+7 (701) 785 88 74</a>
+                                    <a href="tel:+77272740278" className={'tp-thin'}>+7 (727) 274 02 78</a>
+                                    <a href="tel:+77272750507" className={'tp-thin'}>+7 (727) 275 05 07</a>
                                 </div>
 
                                 <div>
