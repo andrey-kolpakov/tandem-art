@@ -32,7 +32,7 @@ export const Footer: React.FC = ({}) => {
                                 {/*<p>Интернет-магазин Vasilisav Cashmere </p>*/}
                                 {/*<p> ИП Круглоголов Игорь Николаевич</p>*/}
                                 {/*<p>ИНН 503808237151</p>*/}
-                                {/*<p>Адрес: ул. Мустафы Озтюрка 11 А, офис 1</p>*/}
+                                <p>Адрес: ул. Мустафы Озтюрка 11 А, офис 1</p>
                             </div>
                             <Link className="footer-rights" href="/privacy-policy">Политика конфиденциальности</Link>
                         </div>
@@ -74,9 +74,9 @@ export const Footer: React.FC = ({}) => {
                                 <div>
                                     <h4>Телефон:</h4>
 
-                                    <a href="tel:+77017858874" className={'tp-thin'}>+7 (701) 785 8874</a>
-                                    <a href="tel:+77272740278" className={'tp-thin'}>274 02 78</a>
-                                    <a href="tel:+77272750507" className={'tp-thin'}>275 05 07</a>
+                                    <a href="tel:+77017858874" className={'tp-thin'}>+7 (701) 785 88 74</a>
+                                    <a href="tel:+77272740278" className={'tp-thin'}>+7 (727) 274 02 78</a>
+                                    <a href="tel:+77272750507" className={'tp-thin'}>+7 (727) 275 05 07</a>
                                 </div>
 
                                 <div>

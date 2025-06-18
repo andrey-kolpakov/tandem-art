@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     gap: 2rem;
-    padding-top: 4rem;
+    padding-top: 10rem;
     padding-bottom: 4rem;
 
     @include breakpoint($mobile-bp) {
