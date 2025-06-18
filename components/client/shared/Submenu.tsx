@@ -31,7 +31,9 @@ export const Submenu: React.FC<Props> = ({className, handleClick}) => {
 
     return (
         <Container className="submenu-container" classNameOuter="submenu-container-outer">
-            <Logo width={70} height={50} alt="special-header"/>
+            <a href="/">
+                <Logo width={70} height={50} alt="special-header"/>
+            </a>
 
             <Link href={'https://go.2gis.com/izaO1'} className="submenu-address">
                 <MdLocationPin size={25}/>
@@ -68,8 +70,8 @@ export const Submenu: React.FC<Props> = ({className, handleClick}) => {
                             Позвонить
                         </button>
                         <div className="popup-numbers">
-                            <a href="tel:+77272750507" >+7 (727) 275-05-07</a>
-                            <a href="tel:+77272740278" >+7 (727) 274-02-78</a>
+                            <a href="tel:+77272750507">+7 (727) 275-05-07</a>
+                            <a href="tel:+77272740278">+7 (727) 274-02-78</a>
                         </div>
                     </div>
                 )}

@@ -1,28 +1,51 @@
 'use client'
 
-import React, {useEffect, memo} from 'react'
-import {Form} from '../index'
-import {submitForm} from '@/actions/index'
+import React, { useEffect } from 'react'
+import { Form } from '../index'
+import { submitForm } from '@/actions/index'
 import './styles/formBlock.scss'
 
 interface Props {
-    className?: string;
+    className?: string
     formBlockOrigin: string
 }
 
-export const FormBlock: React.FC<Props> = ({className, formBlockOrigin}) => {
+export const FormBlock: React.FC<Props> = ({ className, formBlockOrigin }) => {
     useEffect(() => {
         const script = document.createElement('script')
-        script.src =
-            'https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0dbf110f322557ea4f38273ef26c342616afea59e0e332c1d3a6763a0f43bc93&width=100%25&height=100%25&lang=ru_RU&scroll=true'
-        script.async = true
-        script.charset = 'utf-8'
+        script.src = 'https://api-maps.yandex.ru/2.1/?lang=ru_RU'
+        script.type = 'text/javascript'
+        script.onload = () => {
+            // @ts-ignore
+            window.ymaps.ready(() => {
+                // @ts-ignore
+                const myMap = new window.ymaps.Map('yandex-map-container', {
+                    center: [43.232894, 76.906119],
+                    zoom: 17,
+                    controls: [], // можно убрать, если не надо
+                })
 
-        const mapContainer = document.getElementById('yandex-map-container')
-        if (mapContainer) {
-            mapContainer.innerHTML = ''
-            mapContainer.appendChild(script)
+                // @ts-ignore
+                const myPlacemark = new window.ymaps.Placemark(
+                    [43.232894, 76.906119],
+                    {
+                        hintContent: 'Tandem Art',
+                        balloonContent: 'Наш адрес: г.Алматы, ул.Мустафы Озтюрка 11а, офис 1\n',
+                    },
+                    {
+                        iconLayout: 'default#image',
+                        iconImageHref: '/images/logo.svg',
+                        iconImageSize: [80, 80],
+                        iconImageOffset: [-40, -80],
+                    }
+                )
+
+                myMap.options.set('suppressMapOpenBlock', true)
+                myMap.geoObjects.add(myPlacemark)
+            })
         }
+
+        document.head.appendChild(script)
     }, [])
 
     return (
