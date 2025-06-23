@@ -10,13 +10,9 @@ export default function Page() {
     return (
         <div>
 
-            <Container>
+            <Container className={'container--page container--order-page'}>
 
                 <ImagesGallery images={interiorGallery} header={'Интерьерная фотопечать'}/>
-
-            </Container>
-
-            <Container>
 
                 <div className="advantage-page-list">
                     <div>
@@ -38,18 +34,16 @@ export default function Page() {
                             <li>Оригинальную идею для подарка</li>
                         </ul>
                     </div>
-
-
                 </div>
 
 
             </Container>
 
-            <Container>
+
 
                 <FormBlock formBlockOrigin={'Страница с фотопечатью'}/>
 
-            </Container>
+
 
         </div>
     );

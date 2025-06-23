@@ -2,8 +2,8 @@ import {create} from 'zustand'
 import React from "react";
 
 interface PopupState {
-    currentPopup: { content: React.JSX.Element } | null
-    openPopup: (content: React.JSX.Element) => void
+    currentPopup: { content: React.JSX.Element | React.ReactNode } | null
+    openPopup: (content: React.JSX.Element | React.ReactNode) => void
     closePopup: () => void
 }
 
