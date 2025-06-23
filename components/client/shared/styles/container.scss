@@ -5,6 +5,24 @@
   padding: 0 1rem;
   margin: 0 auto;
 
+  &--order-page{
+
+    @include breakpoint($mobile-bp){
+      display: flex;
+      flex-direction: column;
+
+      .custom-gallery{
+        order: 1;
+      }
+
+    }
+  }
+
+  &--reverse-mobile{
+    display: flex;
+    flex-direction: column;
+  }
+
   &--page {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -32,6 +50,8 @@
   background-size: cover;
   //margin: 4rem 0;
   box-sizing: border-box;
+
+
 
   &--full-screen {
     min-height: 100vh;

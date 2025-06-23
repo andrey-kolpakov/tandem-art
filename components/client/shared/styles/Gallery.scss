@@ -57,14 +57,26 @@
 
   .item-5 {
     width: calc(33.3% - 1rem);
+
+    @include breakpoint($mobile-bp){
+      width: 47%;
+    }
   }
 
   .item-6 {
     width: calc(33.3% - 1rem);
+
+    @include breakpoint($mobile-bp){
+      width: 47%;
+    }
   }
 
   .item-7 {
     width: calc(33.3% - 1rem);
+
+    @include breakpoint($mobile-bp){
+      width: 100%;
+    }
   }
 }
 

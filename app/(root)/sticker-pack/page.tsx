@@ -16,7 +16,7 @@ const galleryItems = [
 export default function Page() {
     return (
         <>
-            <Container className={'container--page'}>
+            <Container className={'container--page container--order-page'}>
                 <Gallery items={galleryItems}/>
 
                 <div className="print-materials">
