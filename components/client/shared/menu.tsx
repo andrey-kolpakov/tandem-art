@@ -53,6 +53,11 @@ const menuItems: MenuItem[] = [
         ]
     },
     {
+        id: "stickers",
+        label: "Стикеры",
+        icon: "/images/menu/stickers.webp"
+    },
+    {
         id: "interiorprint",
         label: "Интерьерная печать",
         icon: "/images/menu/interior.webp",

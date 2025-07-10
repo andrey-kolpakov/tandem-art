@@ -6,20 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7cd328da-717d-42ef-989b-7df31b355962" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/billboard-printing/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/billboard-printing/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/canvas-printing/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/canvas-printing/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/interior/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/interior/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/sticker-pack/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/sticker-pack/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(root)/wide-format-printing/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(root)/wide-format-printing/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/client/shared/interiorPrint.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/interiorPrint.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/client/shared/menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/client/shared/styles/Gallery.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/styles/Gallery.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/client/shared/styles/StickerCategories.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/styles/StickerCategories.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/client/shared/styles/container.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/styles/container.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/client/shared/styles/formBlock.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/styles/formBlock.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/client/shared/styles/menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/styles/menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/client/shared/styles/popup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/styles/popup.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/client/shared/wideformatPrint.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/client/shared/wideformatPrint.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +153,10 @@
       <workItem from="1750258236418" duration="2505000" />
       <workItem from="1750418862728" duration="1040000" />
       <workItem from="1750664793353" duration="7000" />
-      <workItem from="1750669770389" duration="2687000" />
+      <workItem from="1750669770389" duration="3478000" />
+      <workItem from="1750689688248" duration="611000" />
+      <workItem from="1750769762202" duration="12000" />
+      <workItem from="1751876562237" duration="678000" />
     </task>
     <servers />
   </component>
